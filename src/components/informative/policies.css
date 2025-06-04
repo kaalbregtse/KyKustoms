@@ -1,0 +1,82 @@
+.policies-section {
+    background: var(--charcoal, #232323);
+    color: var(--white, #F5F5F5);
+    min-height: 100vh;
+    padding: 4rem 0 4rem 0;
+    width: 100%;
+}
+
+.policies-bg {
+    display: none; /* Remove background accent for simplicity */
+}
+
+.policies-container {
+    width: 80vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.policies-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--green, #06D6A0);
+    background: linear-gradient(90deg, #06D6A0 0%, #00b4d8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left;
+}
+
+.policies-section h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #06D6A0;
+    margin-bottom: 0.7rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.policies-section p,
+.policies-section li {
+    color: #e0e6ed;
+    font-size: 1.07rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.policies-section a {
+    color: #00b4d8;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.policy-email-link {
+    color: #00b4d8;
+    text-decoration: underline;
+    font-weight: 600;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: inherit;
+    transition: color 0.2s;
+}
+
+.policy-email-link:hover,
+.policy-email-link:focus {
+    color: #06D6A0;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .policies-container {
+        width: 96vw;
+        padding: 0 0.5rem;
+    }
+    .policies-title {
+        font-size: 1.3rem;
+    }
+}

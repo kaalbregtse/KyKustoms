@@ -1,0 +1,297 @@
+/* NAV STYLES */
+nav {
+    background-color: var(--charcoal);
+    color: var(--white);
+    padding: 1rem 0;
+    font-size: var(--font-base);
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+nav img {
+    height: 50px;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.nav-logo, .nav-logo-reverse {
+    font-size: var(--font-lg);
+    font-weight: bolder;
+    color: var(--green);
+    margin: 0;
+}
+
+.nav-logo-reverse {
+    transform: rotate(180deg) translateY(-4px) translateX(2px);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-base);
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: var(--green);
+}
+
+nav > div > div:last-child a {
+    background: var(--green);
+    color: var(--charcoal);
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--font-sm);
+    transition: background 0.2s, color 0.2s;
+}
+
+nav > div > div:last-child a:hover {
+    background: var(--white);
+    color: var(--charcoal);
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+    nav > div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+    nav > div > div:last-child {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+/* MOBILE NAV COMPONENT */
+.nav-mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: var(--charcoal);
+        color: var(--white);
+        padding: 1rem 0;
+        font-size: var(--font-base);
+        position: relative;
+        z-index: 100;
+    }
+    .nav-mobile-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .nav-mobile-header img {
+        height: 40px;
+    }
+    .nav-mobile-toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        z-index: 110;
+        transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .nav-mobile-bar {
+        width: 28px;
+        height: 3px;
+        background: var(--white);
+        border-radius: 2px;
+        transition: 
+            transform 0.4s cubic-bezier(.68,-0.55,.27,1.55),
+            opacity 0.3s,
+            background 0.2s;
+        display: block;
+        position: relative;
+    }
+    /* Hamburger to X animation */
+    .nav-mobile-toggle.open .nav-mobile-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-mobile-toggle.open .nav-mobile-bar:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0.5) rotate(0deg);
+    }
+    .nav-mobile-toggle.open .nav-mobile-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* Spin animation for the whole button */
+    .nav-mobile-toggle {
+        transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .nav-mobile-toggle.open {
+        transform: rotate(180deg);
+    }
+    .nav-mobile-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: var(--charcoal);
+        width: 100%;
+        padding: 1.5rem 0 1rem 0;
+        gap: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .nav-mobile-menu.open {
+        display: flex;
+        animation: fadeDown 0.3s;
+    }
+    .nav-mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 100%;
+        align-items: center;
+    }
+    .nav-mobile-menu ul li a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: var(--font-lg);
+        transition: color 0.2s;
+    }
+    .nav-mobile-menu ul li a:hover {
+        color: var(--green);
+    }
+    .nav-mobile-cta {
+        background: var(--green);
+        color: var(--charcoal);
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: var(--font-base);
+        transition: background 0.2s, color 0.2s;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    .nav-mobile-cta:hover {
+        background: var(--white);
+        color: var(--charcoal);
+    }
+}
+
+/* Hide desktop nav on tablet and below */
+@media (max-width: 1024px) {
+    nav:not(.nav-mobile) {
+        display: none !important;
+    }
+}
+
+/* Hide mobile nav on desktop */
+@media (min-width: 1025px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: var(--charcoal);
+    color: var(--white);
+    padding: 2rem 0 1rem 0;
+    font-size: var(--font-sm);
+}
+
+footer > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    transition: color 0.2s;
+}
+
+footer ul li a:hover {
+    color: var(--green);
+}
+
+@media (max-width: 768px) {
+    footer > div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    footer ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

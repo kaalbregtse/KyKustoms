@@ -1,0 +1,57 @@
+:root {
+    --blue: #002b5c;
+    --white: #F5F5F5;
+    --muted: #A0A0A0;
+    --red: #EF476F;
+    --green: #06D6A0;
+    --gray: #2C2C2C;
+    --charcoal: #1E1E1E;
+    --black: #121212;
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-3xl: 2.5rem;
+    scroll-behavior: smooth;
+}
+
+/* Medium screens and up */
+@media (min-width: 640px) {
+    :root {
+        --font-base: 1.125rem;
+        --font-lg: 1.5rem;
+        --font-xl: 2rem;
+        --font-2xl: 2.5rem;
+        --font-3xl: 3rem;
+    }
+}
+
+/* Large screens and up */
+@media (min-width: 1024px) {
+    :root {
+        --font-base: 1.25rem;
+        --font-lg: 1.75rem;
+        --font-xl: 2.25rem;
+        --font-2xl: 3rem;
+        --font-3xl: 4rem;
+    }
+}
+
+/* Add this to App.css or your global CSS file */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1.5s ease-in;
+}
+

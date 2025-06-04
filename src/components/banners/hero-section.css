@@ -1,0 +1,123 @@
+section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--charcoal);
+    color: var(--white);
+    padding: 2rem 1rem;
+    padding-bottom: 0; /* Remove bottom padding so the wave sits flush */
+    box-sizing: border-box;
+}
+
+section > div {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    animation: fadeInUp 1.5s ease-in;
+    position: relative;
+    z-index: 1;
+}
+
+section h1 {
+    font-size: var(--font-2xl);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+section p {
+    font-size: var(--font-lg);
+    margin-bottom: 2rem;
+    color: var(--muted);
+}
+
+section a {
+    display: inline-block;
+    background: var(--green);
+    color: var(--charcoal);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: var(--font-base);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    animation: heroBtnPop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+}
+
+section a:hover {
+    background: var(--white);
+    color: var(--charcoal);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.section-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(6,214,160,0.10) 0%, rgba(0,43,92,0.25) 100%);
+}
+
+.hero-highlight {
+    color: var(--green);
+    background: linear-gradient(90deg, var(--green) 40%, var(--blue) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-svg {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.hero-wave {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Medium screens and up */
+@media (min-width: 640px) {
+    section h1 {
+        font-size: var(--font-3xl);
+    }
+    section p {
+        font-size: var(--font-xl);
+    }
+}
+
+/* Large screens and up */
+@media (min-width: 1024px) {
+    section {
+        min-height: 90dvh;
+        overflow: hidden;
+        padding: 4rem 1rem;
+    }
+    section h1 {
+        font-size: 3rem;
+    }
+    section p {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes heroBtnPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}

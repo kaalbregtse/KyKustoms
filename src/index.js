@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Layout from './components/layouts/layout';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import './utils/fontawesome.js';
+import PoliciesPage from './pages/documents/policies.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<div>Page Not Found</div>} />
+          <Route path="policies" element={<PoliciesPage />} />
+          {/* Add more routes here */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
