@@ -117,6 +117,12 @@ export default function ContactForm() {
                     {status.success && <div className="contact-success">{status.success}</div>}
                     {status.error && <div className="contact-error">{status.error}</div>}
                 </form>
+                <div className="contact-direct-email">
+                    <span>Prefer email?  Email me directly at</span>{" "}
+                    <a href="mailto:kyczaraalbregtse@gmail.com" className="contact-direct-email-link">
+                        kyczaraalbregtse@gmail.com
+                    </a>
+                </div>
             </div>
         </section>
     );

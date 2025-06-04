@@ -6,14 +6,21 @@ const testimonials = [
         company: "Rising Tide Learning LLC",
         text: "Kyczar delivered a platform that exceeded our expectations. The process was smooth, and the results speak for themselves!",
     },
+    {
+        name: "Grace M.",
+        company: "Independent Swim Coach",
+        text: "Working with Kyczar was a game-changer for my clients. The website beautiful, functional and user-friendly.",
+    }
 ];
 
 export default function Testimonials() {
     return (
         <section className="testimonials-section" id="testimonials">
-            {/* Top SVG wave */}
+            {/* Top SVG wave, flipped horizontally */}
             <svg className="testimonials-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M0,100 C480,0 960,100 1440,0 L1440,0 L0,0 Z" fill="var(--charcoal)" />
+                <g transform="scale(-1,1) translate(-1440,0)">
+                    <path d="M0,100 C480,0 960,100 1440,0 L1440,0 L0,0 Z" fill="var(--charcoal)" />
+                </g>
             </svg>
             <div className="testimonials-bg" aria-hidden="true"></div>
             <div className="testimonials-container">
