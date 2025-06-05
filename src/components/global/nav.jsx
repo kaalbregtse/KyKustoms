@@ -5,12 +5,13 @@ export default function Nav() {
     return (
         <nav>
             <div>
-                <img src={logo} alt="Kycars Logo" className="nav-logo-img" />
+                <a href='/'><img src={logo} alt="Kycars Logo" className="nav-logo-img" /></a>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/#services">Services</a></li>
                     <li><a href="/#portfolio">Past Work</a></li>
                     <li><a href="/#process">Our Process</a></li>
+                    <li><a href="/#testimonials">Testimonials</a></li>
                 </ul>
                 <div>
                     <a href='/contact'>Contact</a>
