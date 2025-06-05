@@ -119,8 +119,8 @@ export default function ContactForm() {
                 </form>
                 <div className="contact-direct-email">
                     <span>Prefer email?  Email me directly at</span>{" "}
-                    <a href="mailto:kyczaraalbregtse@gmail.com" className="contact-direct-email-link">
-                        kyczaraalbregtse@gmail.com
+                    <a href="mailto:kyczar@kykustoms.net" className="contact-direct-email-link">
+                        kyczar@kykustoms.net
                     </a>
                 </div>
             </div>
