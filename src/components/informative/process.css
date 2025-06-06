@@ -1,6 +1,6 @@
 .process-section {
-    background: var(--charcoal, #1E1E1E);
-    color: var(--white, #F5F5F5);
+    background: var(--pure-white);
+    color: var(--primary);
     padding: 4rem 1rem 3rem 1rem;
     position: relative;
     overflow: hidden;
@@ -29,7 +29,7 @@
 }
 
 .process-step {
-    background: rgba(255,255,255,0.02);
+    background: var(--primary);
     border-radius: 16px;
     padding: 2rem 1.5rem 1.5rem 1.5rem;
     min-width: 220px;
@@ -43,27 +43,24 @@
 }
 
 .process-step:hover {
-    box-shadow: 0 8px 32px 0 rgba(6,214,160,0.12);
     transform: translateY(-6px) scale(1.03);
 }
 
 .process-icon {
     font-size: 2.5rem;
-    color: var(--green, #06D6A0);
-    margin-bottom: 1rem;
-    filter: drop-shadow(0 2px 8px rgba(6,214,160,0.10));
+    color: var(--lightest-blue, #06D6A0);
 }
 
 .process-step-title {
     font-size: var(--font-lg, 1.25rem);
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--green, #06D6A0);
+    margin: 0.5rem 0;
+    color: var(--lightest-blue);
 }
 
 .process-step-desc {
     font-size: var(--font-base, 1rem);
-    color: var(--muted, #A0A0A0);
+    color: var(--pure-white);
     margin: 0;
 }
 

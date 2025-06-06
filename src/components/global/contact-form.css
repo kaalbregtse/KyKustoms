@@ -1,6 +1,6 @@
 .contact-section {
-    background: var(--charcoal, #232323);
-    color: var(--white, #F5F5F5);
+    background: linear-gradient(120deg, #eafaff 0%, #b6e0f7 60%, #e0f7fa 100%);
+    color: var(--primary);
     padding: 4rem 1rem 4rem 1rem;
     display: flex;
     justify-content: center;
@@ -17,13 +17,20 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0.18;
+    overflow: hidden;
+}
+
+.contact-bg-svg svg {
+    width: 100vw;
+    height: 100vh;
+    display: block;
 }
 
 .contact-container {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    background: var(--gray, #232b3a); /* Use gray variable */
+    background: var(--gray); /* Use gray variable */
     border-radius: 22px;
     padding: 2.5rem 2.5rem;
     position: relative;
@@ -38,7 +45,7 @@
     margin-bottom: 2rem;
     text-align: left;
     color: var(--green, #06D6A0);
-    background: linear-gradient(90deg, #06D6A0 0%, #00b4d8 100%);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--lightest-blue) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -55,7 +62,7 @@
     flex-direction: column;
     font-weight: 500;
     font-size: 1rem;
-    color: var(--white, #F5F5F5);
+    color: var(--primary);
     gap: 0.5rem;
     text-align: left;
 }
@@ -77,7 +84,7 @@
     border-radius: 10px;
     padding: 0.85rem 1.1rem;
     font-size: 1.05rem;
-    background: var(--charcoal, #232323); /* Match site dark background */
+    background: var(--pure-white, #232323); /* Match site dark background */
     color: #F5F5F5;
     margin-top: 0.2rem;
     outline: none;
@@ -97,7 +104,7 @@
 .contact-form .contact-services-label {
     font-weight: 600;
     font-size: 1rem;
-    color: #06D6A0;
+    color: var(--primary);
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     letter-spacing: 0.01em;
@@ -112,8 +119,8 @@
 }
 
 .contact-form .contact-service-option {
-    background: #181f2a;
-    color: #06D6A0;
+    background: var(--lightest-blue);
+    color: var(--primary);
     border-radius: 16px;
     padding: 0.18rem 0.7rem 0.18rem 0.6rem;
     font-size: 0.93rem;
@@ -124,26 +131,26 @@
     gap: 0.3rem;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border 0.2s;
-    border: 2px solid #06D6A0;
+    border: 2px solid var(--primary);
     user-select: none;
     box-shadow: none;
     min-height: 1.8rem;
 }
 
 .contact-form .contact-service-option input[type="checkbox"] {
-    accent-color: #06D6A0;
+    accent-color: var(--dark-blue);
     width: 0.95em;
     height: 0.95em;
     margin-right: 0.2em;
     margin-left: 0;
     background: #232323;
     border-radius: 4px;
-    border: 1.5px solid #06D6A0;
+    border: 1.5px solid var(--dark-blue);
     transition: border 0.2s;
 }
 
 .contact-form .contact-service-option input[type="checkbox"]:focus {
-    outline: 2px solid #00b4d8;
+    outline: 2px solid var(--dark-blue);
 }
 
 .contact-form .contact-service-option input[type="checkbox"]:checked + span {
@@ -152,9 +159,9 @@
 
 .contact-form .contact-service-option:hover,
 .contact-form .contact-service-option input[type="checkbox"]:focus + span {
-    background: #06D6A0;
-    color: #232323;
-    border-color: #00b4d8;
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 
 .contact-form .contact-service-option input[type="checkbox"]:checked {
@@ -163,8 +170,8 @@
 }
 
 .contact-form button {
-    background: linear-gradient(90deg, #06D6A0 0%, #00b4d8 100%);
-    color: #232323;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--lightest-blue) 100%);
+    color: var(--pure-white);
     border: none;
     border-radius: 10px;
     padding: 1rem 1.5rem;
@@ -250,5 +257,12 @@
 
     .contact-direct-email {
         margin-top: 2rem;
+    }
+}
+@media (max-width: 700px) {
+    .contact-bg-svg svg {
+        width: 100vw;
+        height: 60vw;
+        min-height: 300px;
     }
 }

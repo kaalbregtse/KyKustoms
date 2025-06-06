@@ -9,7 +9,7 @@ const testimonials = [
     {
         name: "Grace M.",
         company: "Independent Swim Coach",
-        text: "Working with Kyczar was a game-changer for my clients. The website beautiful, functional and user-friendly.",
+        text: "Working with Kyczar was a game-changer. The website's beautiful, functional and user-friendly.",
     }
 ];
 
@@ -19,7 +19,7 @@ export default function Testimonials() {
             {/* Top SVG wave, flipped horizontally */}
             <svg className="testimonials-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
                 <g transform="scale(-1,1) translate(-1440,0)">
-                    <path d="M0,100 C480,0 960,100 1440,0 L1440,0 L0,0 Z" fill="var(--charcoal)" />
+                    <path d="M0,100 C480,0 960,100 1440,0 L1440,0 L0,0 Z" fill="var(--pure-white)" />
                 </g>
             </svg>
             <div className="testimonials-bg" aria-hidden="true"></div>
@@ -39,7 +39,7 @@ export default function Testimonials() {
             </div>
             {/* Bottom SVG wave, not wrapped, sits at the very bottom */}
             <svg className="testimonials-wave-bottom" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" fill="var(--charcoal)" />
+                <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" fill="var(--pure-white)" />
             </svg>
         </section>
     );

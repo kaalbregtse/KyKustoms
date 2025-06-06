@@ -61,6 +61,53 @@ export default function ContactForm() {
 
     return (
         <section className="contact-section" id="contact">
+            <div className="contact-bg-svg" aria-hidden="true">
+                <svg viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Animated blob */}
+                    <g>
+                        <ellipse
+                            cx="1200"
+                            cy="200"
+                            rx="220"
+                            ry="120"
+                            fill="url(#contactBlobGrad)"
+                        >
+                            <animate attributeName="rx" values="220;200;220" dur="8s" repeatCount="indefinite" />
+                            <animate attributeName="ry" values="120;140;120" dur="8s" repeatCount="indefinite" />
+                        </ellipse>
+                        <ellipse
+                            cx="300"
+                            cy="700"
+                            rx="180"
+                            ry="90"
+                            fill="url(#contactBlobGrad2)"
+                            opacity="0.7"
+                        >
+                            <animate attributeName="rx" values="180;160;180" dur="10s" repeatCount="indefinite" />
+                            <animate attributeName="ry" values="90;110;90" dur="10s" repeatCount="indefinite" />
+                        </ellipse>
+                    </g>
+                    {/* Floating circles */}
+                    <circle cx="200" cy="200" r="40" fill="var(--light-blue)" opacity="0.18">
+                        <animate attributeName="cy" values="200;230;200" dur="7s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="1240" cy="700" r="30" fill="var(--green)" opacity="0.13">
+                        <animate attributeName="cy" values="700;670;700" dur="6s" repeatCount="indefinite" />
+                    </circle>
+                    {/* Subtle triangle */}
+                    <polygon points="1300,850 1350,900 1250,900" fill="var(--primary)" opacity="0.08" />
+                    <defs>
+                        <linearGradient id="contactBlobGrad" x1="1000" y1="100" x2="1400" y2="300" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#00A8E8" />
+                            <stop offset="1" stopColor="#007EA7" />
+                        </linearGradient>
+                        <linearGradient id="contactBlobGrad2" x1="200" y1="600" x2="400" y2="800" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#007EA7" />
+                            <stop offset="1" stopColor="#00A8E8" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <div className="contact-container">
                 <h2 className="contact-title">Contact Me</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>

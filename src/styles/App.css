@@ -1,12 +1,15 @@
 :root {
-    --blue: #002b5c;
-    --white: #F5F5F5;
-    --muted: #A0A0A0;
+    --dark-blue: #00171F;
+    --primary: #003459;
+    --light-blue: #007EA7;
+    --lightest-blue: #00A8E8;
+    --off-white: #F5F5F5;
+    --pure-white: #FFFFFF;
+    --muted: #00171F;
     --red: #EF476F;
-    --green: #06D6A0;
-    --gray: #2C2C2C;
-    --charcoal: #1E1E1E;
-    --black: #121212;
+    --green: #007EA7;
+    --gray: #F1F1F1;
+    --black: #161617;
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-base: 1rem;

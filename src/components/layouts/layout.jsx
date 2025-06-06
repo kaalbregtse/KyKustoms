@@ -10,7 +10,7 @@ export default function Layout() {
         <>
             <Nav />
             <NavMobile />
-            <main className="mx-auto bg-charcoal">
+            <main>
                 <Outlet/>
             </main>
             <Footer />

@@ -10,7 +10,7 @@ const services = [
     },
     {
         icon: ['fas', 'palette'],
-        title: 'UX/UI Design',
+        title: 'UX & UI Design',
         desc: 'Intuitive, user-centered interfaces that delight and engage your audience.'
     },
     {

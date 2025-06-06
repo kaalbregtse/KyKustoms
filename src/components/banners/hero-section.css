@@ -1,24 +1,25 @@
 section {
-    position: relative;
-    min-height: 100vh;
+    /* Remove these lines if you only want hero centered */
+    /* min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: var(--charcoal);
-    color: var(--white);
+    justify-content: center; */
+    background: var(--pure-white);
+    color: var(--primary);
     padding: 2rem 1rem;
     padding-bottom: 0; /* Remove bottom padding so the wave sits flush */
     box-sizing: border-box;
 }
 
 section > div {
-    max-width: 700px;
+    /* REMOVE or comment out these lines if you only want hero to be centered */
+    /* max-width: 700px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
     animation: fadeInUp 1.5s ease-in;
     position: relative;
-    z-index: 1;
+    z-index: 1; */
 }
 
 section h1 {
@@ -31,26 +32,24 @@ section h1 {
 section p {
     font-size: var(--font-lg);
     margin-bottom: 2rem;
-    color: var(--muted);
+    color: var(--primary);
 }
 
 section a {
     display: inline-block;
-    background: var(--green);
-    color: var(--charcoal);
+    background: var(--lightest-blue);
+    color: var(--primary);
     padding: 0.75rem 2rem;
     border-radius: 4px;
     font-size: var(--font-base);
     font-weight: bold;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
-    animation: heroBtnPop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+    transition: ease-in-out 0.2s;
+    border: none;
 }
 
 section a:hover {
-    background: var(--white);
-    color: var(--charcoal);
-    transform: translateY(-2px) scale(1.03);
+    background: var(--pure-white);
 }
 
 .section-gradient {
@@ -58,37 +57,74 @@ section a:hover {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background: linear-gradient(135deg, rgba(6,214,160,0.10) 0%, rgba(0,43,92,0.25) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(0, 23, 31, .60) 100%);
 }
 
 .hero-highlight {
     color: var(--green);
-    background: linear-gradient(90deg, var(--green) 40%, var(--blue) 100%);
+    background: linear-gradient(90deg, var(--primary) 40%, var(--light-blue) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 1rem;
+    background: var(--pure-white);
+}
+
+.hero-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section a {
+    text-align: center;
+}
+
 .hero-svg {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 340px;
     top: 0;
     right: 0;
     z-index: 0;
     pointer-events: none;
     opacity: 0.5;
+    transition: width 0.3s, height 0.3s;
 }
 
-.hero-wave {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100px;
-    z-index: 2;
-    pointer-events: none;
+@media (max-width: 900px) {
+    .hero-svg {
+        width: 220px;
+        height: 220px;
+    }
+}
+@media (max-width: 600px) {
+    .hero-svg {
+        width: 120px;
+        height: 120px;
+        top: 10px;
+        right: 10px;
+    }
 }
 
 /* Medium screens and up */
@@ -120,4 +156,21 @@ section a:hover {
     0% { transform: scale(0.8); opacity: 0; }
     60% { transform: scale(1.1); opacity: 1; }
     100% { transform: scale(1); }
+}
+
+/* SVG shape animations */
+@keyframes heroBlobFloat {
+    0% { transform: translateY(0) scale(1);}
+    50% { transform: translateY(18px) scale(1.04);}
+    100% { transform: translateY(0) scale(1);}
+}
+@keyframes heroCirclePulse {
+    0% { transform: scale(1);}
+    50% { transform: scale(1.13);}
+    100% { transform: scale(1);}
+}
+@keyframes heroDotMove {
+    0% { transform: translate(0,0);}
+    50% { transform: translate(12px, -8px);}
+    100% { transform: translate(0,0);}
 }
