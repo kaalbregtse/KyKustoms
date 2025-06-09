@@ -20,7 +20,7 @@ root.render(
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<div>Page Not Found</div>} />
           <Route path="policies" element={<PoliciesPage />} />
-          <Route path='/sitemap.xml' element={<Sitemap />} />
+          <Route path='sitemap' element={<Sitemap />} />
           {/* Add more routes here */}
         </Route>
       </Routes>
