@@ -8,6 +8,7 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import './utils/fontawesome.js';
 import PoliciesPage from './pages/documents/policies.js';
+import Sitemap from './pages/documents/sitemap.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<div>Page Not Found</div>} />
           <Route path="policies" element={<PoliciesPage />} />
+          <Route path='/sitemap.xml' element={<Sitemap />} />
           {/* Add more routes here */}
         </Route>
       </Routes>
