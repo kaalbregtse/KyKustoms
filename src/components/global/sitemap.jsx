@@ -68,9 +68,6 @@ ${urls.map(
             }}>
                 {xml}
             </pre>
-            <p style={{marginTop: "1.5rem", color: "#333", fontSize: "0.97rem"}}>
-                <strong>Note:</strong> For Google Search Console, upload a static <code>sitemap.xml</code> file to your public site root. This page is for human viewing and easy download.
-            </p>
         </div>
     );
 }
