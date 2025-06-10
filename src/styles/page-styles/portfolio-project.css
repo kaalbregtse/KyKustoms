@@ -1,0 +1,476 @@
+.portfolio-project-section {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff 0%, rgba(0, 23, 31, 0.08) 100%);
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-link {
+    color: var(--pure-white);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    transition: color 0.2s;
+}
+.back-link:hover {
+    background-color: var(--lightest-blue);
+    text-decoration: underline;
+}
+
+.portfolio-project-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    max-width: 900px;
+    width: 90%;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+    padding: 2rem;
+}
+
+.portfolio-project-image {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+    object-fit: cover;
+}
+
+.portfolio-project-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.portfolio-project-details h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--primary);
+}
+
+.portfolio-project-description {
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+}
+
+.portfolio-project-tech ul {
+    margin: 0.5rem 0 0 1.2rem;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.portfolio-project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background 0.2s, color 0.2s;
+}
+.portfolio-project-link:hover {
+    background: var(--accent, #febd19);
+    color: var(--primary);
+}
+
+.portfolio-project-banner {
+    width: 100%;
+    min-height: 80dvh;
+    background-color: var(--lightest-blue);
+    color: var(--off-white);
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.portfolio-project-banner-content {
+    flex: 2;
+    max-width: 60%;
+    min-height: 70dvh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-project-banner-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.portfolio-project-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+.portfolio-project-description {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #fff;
+    opacity: 0.95;
+    width: 90%;
+}
+
+.portfolio-project-banner-tags {
+    flex: 1;
+    margin-left: 3vw;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 40%;
+}
+
+.portfolio-project-banner-tags > span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.portfolio-project-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.portfolio-project-tag {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-project-banner-link {
+    position: absolute;
+    right: 5vw;
+    bottom: 2.5rem;
+    background: var(--off-white);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 2em;
+    text-decoration: none;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7em;
+    transition: background 0.2s, color 0.2s;
+}
+.portfolio-project-banner-link:hover {
+    background: var(--primary);
+    color: var(--off-white);
+}
+
+.portfolio-project-background {
+    width: 100%;
+    padding: 3rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-project-background-alt {
+    background-color: var(--gray);
+}
+
+.portfolio-project-background-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.portfolio-project-background-content h2 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: var(--primary);
+    letter-spacing: -1px;
+}
+
+.portfolio-project-background-content p {
+    font-size: 1.15rem;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 900px;
+    line-height: 1.7;
+}
+
+.portfolio-project-background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    /* Make the gradient background more vibrant */
+    background: linear-gradient(135deg, var(--gray) 100%);
+    border-radius: 32px;
+}
+
+.portfolio-project-ipad-frame {
+    background: #222;
+    border: 8px solid #111;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18), 0 1.5px 0 #444 inset;
+    padding: 2.5rem 1.2rem 2rem 1.2rem;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-project-ipad-frame::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 7px;
+    background: #444;
+    border-radius: 6px;
+    opacity: 0.5;
+}
+
+.portfolio-project-ipad-frame img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    background: #111;
+    object-fit: contain;
+    display: block;
+    border: none;
+    margin: 0;
+}
+
+/* --- Result Section --- */
+.portfolio-project-result {
+    width: 100%;
+    background-color: var(--lightest-blue);
+    color: var(--off-white);
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-height: fit-content;
+}
+
+.portfolio-project-result-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 76%;
+    gap: 0;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.portfolio-project-result-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 80%;
+    margin-right: 0;
+}
+
+.portfolio-project-result-left h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.portfolio-project-result-left p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    opacity: 0.95;
+}
+
+.portfolio-project-result-link {
+    background: var(--off-white);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7em;
+    transition: 0.3s ease-in-out;
+}
+.portfolio-project-result-link:hover {
+    background: var(--primary);
+    color: var(--off-white);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .portfolio-project-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.2rem;
+    }
+    .portfolio-project-image {
+        width: 100%;
+        max-width: 400px;
+    }
+    .portfolio-project-details h1 {
+        font-size: 1.4rem;
+    }
+    .portfolio-project-background-content h2 {
+        font-size: 1.5rem;
+    }
+    .portfolio-project-background-content p {
+        font-size: 1rem;
+    }
+    .portfolio-project-background-image {
+        padding: 1rem 0.2rem 0.5rem 0.2rem;
+    }
+    .portfolio-project-ipad-frame {
+        padding: 1.2rem 0.4rem 1.2rem 0.4rem;
+        border-radius: 18px;
+        max-width: 100%;
+    }
+    .portfolio-project-ipad-frame::before {
+        width: 40px;
+        height: 5px;
+        top: 0.7rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .portfolio-project-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.5rem 0 1.5rem 0;
+    }
+    .portfolio-project-banner-content {
+        margin-left: 5vw;
+        margin-bottom: 2rem;
+        border-right: none;
+        max-width: 80%;
+    }
+    .portfolio-project-banner-tags {
+        margin-left: 5vw;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .portfolio-project-banner-link {
+        position: static;
+        margin-left: 5vw;
+        margin-top: 2rem;
+    }
+    .portfolio-project-result-content {
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 0 1rem;
+    }
+    .portfolio-project-result-left {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .portfolio-project-result-right {
+        border-left: none;
+        padding-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem 3rem;
+        min-width: 0;
+    }
+    .portfolio-project-result-metric {
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-project-banner {
+        padding: 1.2rem 0.2rem;
+    }
+    .portfolio-project-banner-content {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+    .portfolio-project-banner-tags {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+    .portfolio-project-banner-link {
+        margin-left: 1rem;
+        width: 50%;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    .portfolio-project-banner-content h1 {
+        font-size: 2rem;
+    }
+    .portfolio-project-result {
+        padding: 2.5rem 0 1.5rem 0;
+    }
+    .portfolio-project-result-content {
+        gap: 1.5rem;
+    }
+    .portfolio-project-result-left h2 {
+        font-size: 2rem;
+    }
+    .portfolio-project-result-metric strong {
+        font-size: 1.3rem;
+    }
+    .portfolio-project-result-link {
+        width: 50%;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+}

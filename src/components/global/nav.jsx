@@ -11,7 +11,7 @@ export default function Nav() {
                     <li><a href="/#services">Services</a></li>
                     <li><a href="/#portfolio">Past Work</a></li>
                     <li><a href="/#process">Our Process</a></li>
-                    <li><a href="/#testimonials">Testimonials</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
                 </ul>
                 <div>
                     <a href='/contact'>Contact</a>

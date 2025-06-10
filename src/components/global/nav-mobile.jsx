@@ -25,7 +25,7 @@ export default function NavMobile() {
                     <li><a href="/#services" onClick={() => setOpen(false)}>Services</a></li>
                     <li><a href="/#portfolio" onClick={() => setOpen(false)}>Past Work</a></li>
                     <li><a href="/#process" onClick={() => setOpen(false)}>Our Process</a></li>
-                    <li><a href="/#testimonials" onClick={() => setOpen(false)}>Testimonials</a></li>
+                    <li><a href="/pricing" onClick={() => setOpen(false)}>Pricing</a></li>
                 </ul>
                 <a href="/contact" className="nav-mobile-cta" onClick={() => setOpen(false)}>Contact</a>
             </div>
