@@ -33,7 +33,10 @@ export default function Process() {
     return (
         <section className="process-section" id='process'>
             <div className="process-container">
-                <h2 className="process-title">Our Process</h2>
+                <h2 className="process-title">Design. Build. Launch.</h2>
+                <p className="process-subtext">
+                    From concept to launch, we follow a thoughtful process that balances creativity with technical precision.
+                </p>
                 <div className="process-steps">
                     {steps.map((step, idx) => (
                         <div className="process-step" key={idx}>

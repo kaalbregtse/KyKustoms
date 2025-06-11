@@ -15,10 +15,17 @@
 }
 
 .process-title {
-    font-size: var(--font-2xl, 2rem);
-    font-weight: bold;
-    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
     letter-spacing: 0.02em;
+}
+
+.process-subtext {
+    font-size: 1.15rem;
+    color: var(--primary);
+    margin: 0 auto 2.5rem auto;
+    width: 90%;
 }
 
 .process-steps {
@@ -84,9 +91,13 @@
         gap: 2rem;
     }
     .process-title {
-        font-size: var(--font-2xl, 2.5rem);
+        font-size: 2.5rem;
     }
     .process-step-title {
         font-size: var(--font-xl, 1.5rem);
+    }
+
+    .process-subtext {
+        width: 70%;
     }
 }

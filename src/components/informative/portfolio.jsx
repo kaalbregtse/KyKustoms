@@ -3,12 +3,19 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './portfolio.css';
 import Babblebot from '../../images/babblebot-screenshot.png';
 import Gym from '../../images/gym-site-screenshot.png';
+import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
+
 
 const projects = [
     {
         image: Babblebot,
         title: 'BabbleBot - Education Platform',
         slug: 'education-platform'
+    },
+    {
+        image: LIPAHero,
+        title: 'Lafayette Indiana Pickleball Association - Redesign',
+        slug: 'lafayette-indiana-pickleball-association-redesign'
     },
     {
         image: Gym,
@@ -21,9 +28,9 @@ export default function Portfolio() {
     return (
         <section className="portfolio-section" id="portfolio">
             <div className="portfolio-header">
-                <h2>Portfolio</h2>
+                <h2>Discover Our Latest Work</h2>
                 <p className="portfolio-subtext">
-                    Explore a selection of our recent projects, each crafted with attention to detail and a focus on results.
+                    Browse a curated showcase of recent projects—each one designed with precision, purpose, and measurable impact.
                 </p>
             </div>
             <div className="portfolio-grid">

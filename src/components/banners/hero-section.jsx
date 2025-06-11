@@ -6,9 +6,10 @@ export default function HeroSection() {
             <span className="section-gradient" aria-hidden="true"></span>
             <div>
                 <h1>
-                    Inspiring brands through<span className="hero-highlight"> digital mediums.</span>
+                    Custom Web Design & Development
+                    <span className="hero-highlight"> That Grows Your Business</span>
                 </h1>
-                <p>Freelance web development & design by Kyczar. </p>
+                <p>Freelance web development & design by Kyczar.</p>
                 <a href="/contact">
                     Get Started
                 </a>

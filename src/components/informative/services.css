@@ -25,10 +25,17 @@
 }
 
 .services-title {
-    font-size: var(--font-2xl, 2rem);
-    font-weight: bold;
-    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
     letter-spacing: 0.02em;
+}
+
+.services-subtext {
+    font-size: 1.15rem;
+    color: var(--primary);
+    margin: 0 auto 2.5rem auto;
+    width: 90%;
 }
 
 .services-list {
@@ -79,7 +86,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .services-title {
-        font-size: var(--font-2xl, 2.5rem);
+        font-size: 2.5rem;
     }
     .service-card h3 {
         font-size: var(--font-2xl, 2rem);
@@ -95,6 +102,10 @@
 
     .service-card p {
         color: var(--off-white);
+    }
+
+    .services-subtext {
+        width: 40%!important;
     }
 }
 

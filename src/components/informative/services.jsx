@@ -46,7 +46,10 @@ export default function Services() {
     return (
         <section className="services-section" id='services'>
             <div className="services-container">
-                <h2 className="services-title">Our Services</h2>
+                <h2 className="services-title">What We Offer</h2>
+                <p className="services-subtext">
+                    Every business is different—your website should be too. We offer a range of services including design, development, and ongoing support.
+                </p>
                 <div className="services-list">
                     <div className="services-list__scroll">
                         {scrollingCards.map((service, idx) => (

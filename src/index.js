@@ -10,7 +10,6 @@ import './utils/fontawesome.js';
 import PoliciesPage from './pages/documents/policies.js';
 import Sitemap from './pages/documents/sitemap.js';
 import Pricing from './pages/pricing.js';
-import Portfolio from './pages/portfolio.js';
 import PortfolioProject from './pages/portfolio-project.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,7 +24,6 @@ root.render(
           <Route path="policies" element={<PoliciesPage />} />
           <Route path='sitemap' element={<Sitemap />} />
           <Route path='pricing' element={<Pricing />} />
-          <Route path="portfolio" element={<Portfolio />} />
           <Route path="portfolio/:slug" element={<PortfolioProject />} />
           {/* Add more routes here */}
         </Route>
