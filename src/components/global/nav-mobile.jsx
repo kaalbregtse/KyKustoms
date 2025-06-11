@@ -1,12 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from '../../images/kykustoms-logo-icon.png';
 import './nav-footer.css';
 
 export default function NavMobile() {
     const [open, setOpen] = useState(false);
+    
+    useEffect(() => {
+            const handleScroll = () => {
+                const nav = document.getElementById('nav-mobile');
+                if (window.scrollY > 100) {
+                    nav.classList.add('stickyNavMobile');
+                } else {
+                    nav.classList.remove('stickyNavMobile');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <nav className="nav-mobile">
+
+        <nav className="nav-mobile" id="nav-mobile">
             <div className="nav-mobile-header">
                 <a href="/"><img src={logo} alt="DoD Logo" /></a>
                 <button
@@ -19,7 +33,7 @@ export default function NavMobile() {
                     <span className="nav-mobile-bar"></span>
                 </button>
             </div>
-            <div className={`nav-mobile-menu${open ? " open" : ""}`}>
+            <div className={`nav-mobile-menu${open ? " open" : " close"}`}>
                 <ul>
                     <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
                     <li><a href="/#services" onClick={() => setOpen(false)}>Services</a></li>

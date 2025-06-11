@@ -4,11 +4,31 @@ nav {
     color: var(--pure-white);
     padding: 1rem 0;
     font-size: var(--font-base);
-    position: relative;
     z-index: 10;
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+    transition:
+        box-shadow 0.3s cubic-bezier(.4,0,.2,1),
+        background 0.3s cubic-bezier(.4,0,.2,1),
+        padding 0.3s cubic-bezier(.4,0,.2,1);
+
+}
+
+.stickyNav {
+    position: sticky;
+    border-radius: 0;
+    width: 100%;
+    box-shadow: 0 -10px 40px 0px rgba(0,0,0, .5);
+    padding: 0.5rem 0;
+    top: 0;
+    left: 0;
 }
 
 nav > div {
+    transition: padding 0.3s cubic-bezier(.4,0,.2,1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +79,11 @@ nav > div > div:last-child a:hover {
 
 /* MOBILE NAV */
 @media (max-width: 768px) {
+    nav {
+        width: 90%;
+        left: 5%;
+    }
+
     nav > div {
         flex-direction: column;
         align-items: flex-start;
@@ -89,9 +114,19 @@ nav > div > div:last-child a:hover {
         color: var(--pure-white);
         padding: 1rem 0;
         font-size: var(--font-base);
-        position: relative;
         z-index: 100;
     }
+
+    .stickyNavMobile {
+        position: sticky;
+        border-radius: 0!important;
+        width: 100%;
+        box-shadow: 0 -10px 40px 0px rgba(0,0,0, .5);
+        padding: 0.5rem 0;
+        top: 0;
+        left: 0;
+    }
+
     .nav-mobile-header {
         display: flex;
         flex-direction: row;
@@ -151,6 +186,15 @@ nav > div > div:last-child a:hover {
     .nav-mobile-toggle.open {
         transform: rotate(180deg);
     }
+
+    nav:has(.nav-mobile-menu.open) {
+        border-radius: 8px 8px 0 0;
+    }
+
+    nav:has(.nav-mobile-menu.close){
+        border-radius: 8px;
+    }
+
     .nav-mobile-menu {
         display: none;
         flex-direction: column;
@@ -162,7 +206,7 @@ nav > div > div:last-child a:hover {
         position: absolute;
         left: 0;
         top: 100%;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        border-radius: 0 0 8px 8px;
     }
     .nav-mobile-menu.open {
         display: flex;
@@ -198,10 +242,6 @@ nav > div > div:last-child a:hover {
         transition: background 0.2s, color 0.2s;
         margin-top: 0.5rem;
         display: inline-block;
-    }
-    .nav-mobile-cta:hover {
-        background: var(--pure-white);
-        color: var(--primary);
     }
 }
 
