@@ -4,7 +4,6 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Babblebot from "../images/babblebot-screenshot.png";
 import StudentDash from '../images/student-dash-screenshot.png';
 import TeacherDash from '../images/teacher-dash-screenshot.png';
-import Gym from "../images/gym-site-screenshot.png";
 import LIPAHero from '../images/lipa-ss/LIPA-hero-ss.png';
 import LIPADiscover from '../images/lipa-ss/lipa-discover-ss.png';
 import LIPAFooter from '../images/lipa-ss/lipa-footer-ss.png';
@@ -42,19 +41,6 @@ const projects = [
         tech: ["Figma"],
         link: "https://www.figma.com/proto/eVDgh46zZj5afMlNvjmPQQ/LIPA-Redesign?t=5a2M00CPukVPmFQb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-7&starting-point-node-id=1%3A7"
     },
-    {
-        image: Gym,
-        title: "Gym Site Design",
-        subtitle: "Personal Practice Project",
-        slug: "gym-site-design",
-        description: "This project is a personal practice project designed to showcase my skills in web development and design. It features a modern, responsive layout with a focus on user experience and accessibility. The site includes sections for classes, trainers, and membership options, all styled with Figma for a clean and maintainable codebase.",
-        background: "This project was developed to create a modern and user-friendly website for a local gym. The goal was to enhance the online presence of the gym, making it easier for potential members to find information about classes, trainers, and membership options.",
-        challenge: "The main challenge was to create a visually appealing and functional website that could effectively communicate the gym's offerings. Additionally, ensuring the site was responsive and accessible across various devices was crucial. We overcame these challenges by using modern web technologies and following best practices in UI/UX design.",
-        solution: "The solution involved developing a responsive web application using React for the frontend and Node.js for the backend. The design was crafted in Figma, focusing on usability and accessibility. The site features sections for classes, trainers, and membership options, all styled to provide a clean and modern look.",
-        result: "The project was successfully completed, meeting all requirements and delivering a high-quality user experience.",
-        tech: ["Figma"],
-        link: "https://www.figma.com/design/CU5S20S0wDt5LD0nZNz41Z/Gym-Landing-Page?node-id=0-1&t=HhwGhIFpwwdIXOjU-1"
-    }
 ];
 
 export default function PortfolioProject() {

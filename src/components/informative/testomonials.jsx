@@ -24,7 +24,7 @@ export default function Testimonials() {
             </svg>
             <div className="testimonials-bg" aria-hidden="true"></div>
             <div className="testimonials-container">
-                <h2 className="testimonials-title">What Clients Say</h2>
+                <h2 className="testimonials-title">Hear From Our Clients</h2>
                 <div className="testimonials-list">
                     {testimonials.map((t, idx) => (
                         <div className="testimonial-card" key={idx}>

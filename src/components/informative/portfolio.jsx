@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './portfolio.css';
 import Babblebot from '../../images/babblebot-screenshot.png';
-import Gym from '../../images/gym-site-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
 
 
@@ -16,11 +15,6 @@ const projects = [
         image: LIPAHero,
         title: 'Lafayette Indiana Pickleball Association - Redesign',
         slug: 'lafayette-indiana-pickleball-association-redesign'
-    },
-    {
-        image: Gym,
-        title: 'Gym Site Design',
-        slug: 'gym-site-design'
     },
 ];
 
