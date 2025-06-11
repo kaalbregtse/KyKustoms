@@ -421,7 +421,6 @@
         justify-content: center;
         border-bottom: 1px solid var(--gray);
         background: #fff;
-        white-space: nowrap;
         text-overflow: ellipsis;
     }
     .featureList__title {
@@ -663,5 +662,13 @@
         margin-bottom: 1.2rem;
         padding: 0.7rem 0;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .featureList__infoIcon .featureList__descriptionTooltip {
+        left: -820%;
+        top: 320%;
+        font-size: var(--font-xs);
     }
 }
