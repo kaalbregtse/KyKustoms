@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from '../../images/kykustoms-logo-icon.png';
 import './nav-footer.css';
 
 export default function NavMobile() {
     const [open, setOpen] = useState(false);
-    
-    useEffect(() => {
-            const handleScroll = () => {
-                const nav = document.getElementById('nav-mobile');
-                if (window.scrollY > 100) {
-                    nav.classList.add('stickyNavMobile');
-                } else {
-                    nav.classList.remove('stickyNavMobile');
-                }
-            };
-            window.addEventListener('scroll', handleScroll);
-            return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('nav-mobile');
+        if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
 
     return (
 
@@ -41,7 +37,7 @@ export default function NavMobile() {
                     <li><a href="/#process" onClick={() => setOpen(false)}>Our Process</a></li>
                     <li><a href="/pricing" onClick={() => setOpen(false)}>Pricing</a></li>
                 </ul>
-                <a href="/contact" className="nav-mobile-cta" onClick={() => setOpen(false)}>Contact</a>
+                <a href="/contact" className="nav-mobile-cta" onClick={() => setOpen(false)}>Schedule a Call</a>
             </div>
         </nav>
     );

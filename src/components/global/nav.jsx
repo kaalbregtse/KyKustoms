@@ -1,25 +1,23 @@
-import { useEffect } from 'react';
 import logo from '../../images/kykustoms-logo-icon.png';
 import './nav-footer.css';
 
 export default function Nav() {
-    useEffect(() => {
-        const handleScroll = () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('stickyNav');
-            } else {
-                nav.classList.remove('stickyNav');
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
 
     return (
         <nav>
             <div>
-                <a href='/'><img src={logo} alt="Kycars Logo" className="nav-logo-img" /></a>
+                <div className='logo-container'>
+                    <a href='/'><img src={logo} alt="Kycars Logo" className="nav-logo-img" /></a>
+                </div>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/#services">Services</a></li>
@@ -27,8 +25,8 @@ export default function Nav() {
                     <li><a href="/#process">Our Process</a></li>
                     <li><a href="/pricing">Pricing</a></li>
                 </ul>
-                <div>
-                    <a href='/contact'>Contact</a>
+                <div className='nav-cta'>
+                    <a href='/contact'>Schedule a Call</a>
                 </div>
             </div>
         </nav>

@@ -1,176 +1,123 @@
-section {
-    /* Remove these lines if you only want hero centered */
-    /* min-height: 100vh;
+.hero-section {
+    min-height: 100dvh;
     display: flex;
     align-items: center;
-    justify-content: center; */
-    background: var(--pure-white);
-    color: var(--primary);
+    justify-content: center;
+    color: var(--pure-white);
     padding: 2rem 1rem;
     padding-bottom: 0; /* Remove bottom padding so the wave sits flush */
     box-sizing: border-box;
+    background-position: left;
 }
 
-section > div {
-    /* REMOVE or comment out these lines if you only want hero to be centered */
-    /* max-width: 700px;
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-tags p {
+    font-size: var(--font-base)!important;
+    margin: 0.5rem!important;
+}
+
+.hero-section > div {
+    max-width: 700px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
     animation: fadeInUp 1.5s ease-in;
-    position: relative;
-    z-index: 1; */
+    z-index: 1;
 }
 
-section h1 {
-    font-size: var(--font-2xl);
+.hero-section h1 {
+    font-size: var(--font-xl);
     font-weight: bold;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     line-height: 1.1;
 }
 
-section p {
-    font-size: var(--font-lg);
+.hero-section p {
+    font-size: var(--font-sm);
     margin-bottom: 2rem;
-    color: var(--primary);
+    color: var(--pure-white);
 }
 
-section a {
+.hero-section a {
     display: inline-block;
-    background: var(--lightest-blue);
-    color: var(--primary);
+    background: transparent;
+    color: var(--pure-white);
+    border: 1px solid var(--pure-white);
     padding: 0.75rem 2rem;
     border-radius: 4px;
-    font-size: var(--font-base);
+    font-size: var(--font-sm);
     font-weight: bold;
     text-decoration: none;
     transition: ease-in-out 0.2s;
-    border: none;
 }
 
-section a:hover {
-    background: var(--pure-white);
-}
-
-.section-gradient {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(0, 23, 31, .60) 100%);
+.hero-section a:hover {
+    border: 1px solid #cb6ce6;
+    color: #cb6ce6;
 }
 
 .hero-highlight {
-    color: var(--green);
-    background: linear-gradient(90deg, var(--primary) 40%, var(--light-blue) 100%);
+    background: linear-gradient(90deg, var(--lightest-blue) 0%, #cb6ce6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero-section {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    padding: 0 1rem;
-    background: var(--pure-white);
-}
-
-.hero-section > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 700px;
-    position: relative;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.hero-section h1,
-.hero-section p,
-.hero-section a {
-    text-align: center;
-}
-
-.hero-svg {
-    position: absolute;
-    width: 340px;
-    height: 340px;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.5;
-    transition: width 0.3s, height 0.3s;
-}
-
-@media (max-width: 900px) {
-    .hero-svg {
-        width: 220px;
-        height: 220px;
-    }
-}
-@media (max-width: 600px) {
-    .hero-svg {
-        width: 120px;
-        height: 120px;
-        top: 10px;
-        right: 10px;
-    }
-}
-
 /* Medium screens and up */
 @media (min-width: 640px) {
-    section h1 {
-        font-size: var(--font-3xl);
+    .hero-section h1 {
+        font-size: var(--font-2xl);
+        margin-top: 1rem;
     }
-    section p {
-        font-size: var(--font-xl);
+    .hero-section p {
+        font-size: var(--font-md);
+    }
+
+    .hero-tags {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hero-tags p {
+        margin: 0;
+        font-size: 1.5rem!important;
     }
 }
 
 /* Large screens and up */
 @media (min-width: 1024px) {
-    section {
-        min-height: 90dvh;
+    .hero-section {
+        min-height: 100dvh;
         overflow: hidden;
         padding: 4rem 1rem;
     }
-    section h1 {
-        font-size: 3rem;
+    
+    .hero-tags {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
-    section p {
-        font-size: 1.5rem;
+
+    .hero-tags p {
+        margin: 0;
+        font-size: 1.5rem!important;
     }
-}
 
-@keyframes heroBtnPop {
-    0% { transform: scale(0.8); opacity: 0; }
-    60% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); }
-}
+    .hero-section h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
 
-/* SVG shape animations */
-@keyframes heroBlobFloat {
-    0% { transform: translateY(0) scale(1);}
-    50% { transform: translateY(18px) scale(1.04);}
-    100% { transform: translateY(0) scale(1);}
-}
-@keyframes heroCirclePulse {
-    0% { transform: scale(1);}
-    50% { transform: scale(1.13);}
-    100% { transform: scale(1);}
-}
-@keyframes heroDotMove {
-    0% { transform: translate(0,0);}
-    50% { transform: translate(12px, -8px);}
-    100% { transform: translate(0,0);}
+    .hero-section a {
+        font-size: 1rem;
+    }
 }

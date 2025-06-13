@@ -1,30 +1,19 @@
 /* NAV STYLES */
 nav {
-    background-color: var(--primary);
+    background-color: transparent;
     color: var(--pure-white);
     padding: 1rem 0;
     font-size: var(--font-base);
     z-index: 10;
     position: fixed;
-    left: 10%;
-    width: 80%;
-    margin: 20px auto 0 auto;
-    border-radius: 8px;
-    transition:
-        box-shadow 0.3s cubic-bezier(.4,0,.2,1),
-        background 0.3s cubic-bezier(.4,0,.2,1),
-        padding 0.3s cubic-bezier(.4,0,.2,1);
-
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.stickyNav {
-    position: sticky;
-    border-radius: 0;
-    width: 100%;
+nav.scrolled {
+    background-color: rgba(0,0,0, .3);
     box-shadow: 0 -10px 40px 0px rgba(0,0,0, .5);
-    padding: 0.5rem 0;
-    top: 0;
-    left: 0;
+
 }
 
 nav > div {
@@ -32,10 +21,16 @@ nav > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0 auto;
     padding: 0 1rem;
-    flex-wrap: wrap;
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.logo-container {
+    width: 25%;
+    text-align: left;
 }
 
 nav img {
@@ -48,6 +43,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 50%;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -61,28 +58,31 @@ nav ul li a:hover {
     border-bottom: 1px solid var(--pure-white);
 }
 
+.nav-cta {
+    width: 25%;
+    text-align: right;
+}
+
 nav > div > div:last-child a {
-    background: var(--lightest-blue);
-    color: var(--primary);
-    padding: 0.5rem 1.25rem;
-    border-radius: 4px;
+    background: transparent;
+    border: 1px solid var(--pure-white);
+    color: var(--pure-white);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
     text-decoration: none;
     font-weight: bold;
     font-size: var(--font-sm);
-    transition: background 0.2s, color 0.2s;
+    transition: 0.3s ease-in-out;
 }
 
 nav > div > div:last-child a:hover {
-    background: var(--pure-white);
-    color: var(--primary);
+    border: 1px solid #cb6ce6;
+    color: #cb6ce6;
+    opacity: 0.8;
 }
 
 /* MOBILE NAV */
 @media (max-width: 768px) {
-    nav {
-        width: 90%;
-        left: 5%;
-    }
 
     nav > div {
         flex-direction: column;
@@ -110,21 +110,19 @@ nav > div > div:last-child a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background: var(--primary);
+        background-color: transparent;
         color: var(--pure-white);
         padding: 1rem 0;
         font-size: var(--font-base);
         z-index: 100;
+        position: fixed;
+        top: 0;
+        transition: none;
     }
 
-    .stickyNavMobile {
-        position: sticky;
-        border-radius: 0!important;
-        width: 100%;
+    .nav-mobile.scrolled {
         box-shadow: 0 -10px 40px 0px rgba(0,0,0, .5);
-        padding: 0.5rem 0;
-        top: 0;
-        left: 0;
+        background-color: var(--primary);
     }
 
     .nav-mobile-header {
@@ -187,12 +185,8 @@ nav > div > div:last-child a:hover {
         transform: rotate(180deg);
     }
 
-    nav:has(.nav-mobile-menu.open) {
-        border-radius: 8px 8px 0 0;
-    }
-
-    nav:has(.nav-mobile-menu.close){
-        border-radius: 8px;
+    .nav-mobile:has(.nav-mobile-menu.open) {
+        background-color: var(--primary);
     }
 
     .nav-mobile-menu {
@@ -206,21 +200,24 @@ nav > div > div:last-child a:hover {
         position: absolute;
         left: 0;
         top: 100%;
-        border-radius: 0 0 8px 8px;
+        height: 83dvh;
     }
     .nav-mobile-menu.open {
         display: flex;
+        text-align: right;
         animation: fadeDown 0.3s;
+        min-width: 100%;
+        padding: 1.5rem 0rem 1rem 0;
+        align-items: flex-end;
     }
     .nav-mobile-menu ul {
         list-style: none;
-        padding: 0;
-        margin: 0 0 1rem 0;
+        padding: 0 1.5rem 0 0;
+        width: 90%;
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
-        width: 100%;
-        align-items: center;
+        align-items: flex-end;
     }
     .nav-mobile-menu ul li a {
         color: var(--pure-white);
@@ -232,8 +229,9 @@ nav > div > div:last-child a:hover {
         color: var(--green);
     }
     .nav-mobile-cta {
-        background: var(--green);
-        color: var(--primary);
+        background: transparent;
+        color: var(--pure-white);
+        border: 1px solid var(--pure-white);
         padding: 0.75rem 2rem;
         border-radius: 4px;
         text-decoration: none;
@@ -241,6 +239,7 @@ nav > div > div:last-child a:hover {
         font-size: var(--font-base);
         transition: background 0.2s, color 0.2s;
         margin-top: 0.5rem;
+        margin-right: 1.5rem;
         display: inline-block;
     }
 }
