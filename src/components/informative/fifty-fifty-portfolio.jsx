@@ -38,7 +38,7 @@ export default function FiftyFiftyPortfolio() {
                     <rect x="40" y="40" width="720" height="400" rx="28" fill="#222" stroke="#444" strokeWidth="4"/>
                     {/* Laptop screen area (for image carousel) */}
                     <foreignObject x="60" y="60" width="680" height="360">
-                        <div style={{ width: '680px', height: '360px', overflow: 'hidden' }}>
+                        <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <div
                                 className="carousel-track"
                                 style={{

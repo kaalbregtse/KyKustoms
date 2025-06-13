@@ -73,5 +73,6 @@
 
     .laptop-svg-frame {
         width: 100%;
+        overflow: hidden;
     }
 }
