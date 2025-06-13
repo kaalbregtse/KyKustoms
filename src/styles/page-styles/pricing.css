@@ -1,26 +1,28 @@
 /* Pricing Header Styles */
 .pricing-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 5rem;
+    min-height: 40dvh;
+    padding: 5rem;
 }
 
 .pricing-title {
     font-size: var(--font-2xl);
     width: 40%;
-    margin: auto;
-    color: var(--primary);
+    margin: 0 auto;
+    color: var(--pure-white);
 }
 
 .pricing-title span {
-    background: radial-gradient(var(--lightest-blue) 20%, var(--primary) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--highlight);
 }
 
 .pricing-header p {
     font-size: var(--font-sm);
-    color: var(--dark-blue);
+    color: var(--pure-white);
     width: 25%;
     margin: 1rem auto;
 }
@@ -322,8 +324,7 @@
 @media (max-width: 1100px) {
     /* Pricing Header */
     .pricing-header {
-        margin: 3rem 0 1.5rem 0;
-        padding: 0 2rem;
+        padding: 5rem 2rem;
     }
     .pricing-title {
         font-size: var(--font-xl);
@@ -474,8 +475,8 @@
 @media (max-width: 700px) {
     /* Pricing Header */
     .pricing-header {
-        margin: 4rem 0 3rem 0;
-        padding: 0 1rem;
+        margin: 0;
+        padding: 5rem 1rem;
         height: 60dvh;
         display: flex;
         flex-direction: column;

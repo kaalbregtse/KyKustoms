@@ -1,13 +1,14 @@
 .process-section {
-    background: var(--pure-white);
-    color: var(--primary);
-    padding: 4rem 1rem 3rem 1rem;
+    background-color: var(--obsidian);
+    color: var(--pure-white);
+    padding: 0rem 1rem 10rem 1rem;
     position: relative;
     overflow: hidden;
 }
 
 .process-container {
-    max-width: 1100px;
+    min-width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -15,7 +16,7 @@
 }
 
 .process-title {
-    font-size: 2.5rem;
+    font-size: var(--font-lg);
     font-weight: 800;
     margin-bottom: 0.5rem;
     letter-spacing: 0.02em;
@@ -23,7 +24,7 @@
 
 .process-subtext {
     font-size: 1.15rem;
-    color: var(--primary);
+    color: var(--highlight);
     margin: 0 auto 2.5rem auto;
     width: 90%;
 }
@@ -31,20 +32,19 @@
 .process-steps {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: start;
+    gap: 1rem;
 }
 
 .process-step {
-    background: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--pure-white);
     border-radius: 16px;
     padding: 2rem 1.5rem 1.5rem 1.5rem;
-    min-width: 220px;
-    max-width: 240px;
-    flex: 1 1 200px;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
     transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -54,21 +54,22 @@
 }
 
 .process-icon {
-    font-size: 2.5rem;
-    color: var(--lightest-blue, #06D6A0);
+    font-size: 20px;
+    color: var(--highlight);
 }
 
 .process-step-title {
-    font-size: var(--font-lg, 1.25rem);
+    font-size: var(--font-base);
     font-weight: 600;
-    margin: 0.5rem 0;
-    color: var(--lightest-blue);
+    margin: 0.5rem 0 1rem 0;
+    color: var(--pure-white);
 }
 
 .process-step-desc {
     font-size: var(--font-base, 1rem);
     color: var(--pure-white);
     margin: 0;
+    text-align: left;
 }
 
 /* Responsive: stack steps on mobile */
@@ -79,7 +80,6 @@
         gap: 2rem;
     }
     .process-step {
-        max-width: 400px;
         width: 100%;
     }
 }
@@ -87,17 +87,26 @@
 @media (min-width: 1024px) {
     .process-steps {
         flex-direction: row;
-        align-items: center;
         gap: 2rem;
     }
     .process-title {
         font-size: 2.5rem;
     }
     .process-step-title {
-        font-size: var(--font-xl, 1.5rem);
+        font-size: var(--font-lg, 1.5rem);
     }
 
     .process-subtext {
         width: 70%;
+    }
+
+    .process-step {
+        align-items: start;
+        text-align: left;
+        max-width: 25%;
+    }
+
+    .process-step-desc {
+        font-size: var(--font-sm);
     }
 }

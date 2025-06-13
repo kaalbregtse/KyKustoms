@@ -1,6 +1,7 @@
 :root {
     --dark-blue: #00171F;
     --primary: #003459;
+    --highlight: #feb73f;
     --light-blue: #007EA7;
     --lightest-blue: #00A8E8;
     --off-white: #F5F5F5;
@@ -9,6 +10,7 @@
     --red: #EF476F;
     --green: #007EA7;
     --gray: #F1F1F1;
+    --obsidian: #282828;
     --black: #161617;
     --background-gray: #F2F2F2;
     --font-xs: 0.75rem;
@@ -18,6 +20,7 @@
     --font-xl: 1.5rem;
     --font-2xl: 2rem;
     --font-3xl: 2.5rem;
+    --button-padding: 0.75rem 2rem
     scroll-behavior: smooth;
 }
 

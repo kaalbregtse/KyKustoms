@@ -1,0 +1,77 @@
+.fifty-fifty-portfolio {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.text-and-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    padding: 30px 0 0 0;
+}
+
+.text-and-btn p {
+    font-size: var(--font-base);
+    color: var(--pure-white)
+}
+
+.text-and-btn p a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+.portfolio-btn {
+    border: 1px solid var(--pure-white);
+    color: var(--pure-white);
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-btn:hover {
+    border: 1px solid var(--highlight);
+    color: var(--highlight);
+}
+
+.laptop-svg-frame {
+    width: 60%;
+}
+
+.laptop-carousel {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    margin: 0 auto;
+}
+.carousel-track {
+    width: 100%;
+}
+.carousel-slide img {
+    object-position: top;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .fifty-fifty-portfolio {
+        flex-direction: column-reverse;
+    }
+
+    .text-and-btn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .laptop-svg-frame {
+        width: 100%;
+    }
+}

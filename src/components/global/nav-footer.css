@@ -11,7 +11,7 @@ nav {
 }
 
 nav.scrolled {
-    background-color: rgba(0,0,0, .3);
+    background-color: rgba(0,0,0, .4);
     box-shadow: 0 -10px 40px 0px rgba(0,0,0, .5);
 
 }
@@ -51,11 +51,12 @@ nav ul li a {
     color: var(--pure-white);
     text-decoration: none;
     font-size: var(--font-base);
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
 }
 
 nav ul li a:hover {
-    border-bottom: 1px solid var(--pure-white);
+    color: var(--highlight);
+    border-bottom: 1px solid var(--highlight);
 }
 
 .nav-cta {
@@ -67,7 +68,7 @@ nav > div > div:last-child a {
     background: transparent;
     border: 1px solid var(--pure-white);
     color: var(--pure-white);
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 1.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -76,9 +77,8 @@ nav > div > div:last-child a {
 }
 
 nav > div > div:last-child a:hover {
-    border: 1px solid #cb6ce6;
-    color: #cb6ce6;
-    opacity: 0.8;
+    border: 1px solid var(--highlight);
+    color: var(--highlight);
 }
 
 /* MOBILE NAV */
@@ -332,8 +332,8 @@ nav > div > div:last-child a:hover {
 
 /* FOOTER STYLES */
 footer {
-    background-color: var(--pure-white);
-    color: var(--black);
+    background-color: var(--primary);
+    color: var(--pure-white);
     padding: 2rem 0 1rem 0;
     font-size: var(--font-sm);
 }

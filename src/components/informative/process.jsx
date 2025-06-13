@@ -1,3 +1,4 @@
+import SectionHeader from '../global/section-header';
 import './process.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -15,7 +16,7 @@ const steps = [
     {
         icon: ['fas', 'laptop-code'],
         title: 'Development',
-        desc: 'We build robust, scalable solutions using modern technologies and best practices.'
+        desc: 'We build robust, scalable solutions using modern technologies like React and industry best practices.'
     },
     {
         icon: ['fas', 'rocket'],
@@ -25,18 +26,15 @@ const steps = [
     {
         icon: ['fas', 'tools'],
         title: 'Support',
-        desc: 'We provide ongoing support, updates, and improvements to keep your project thriving.'
+        desc: 'We provide ongoing support, updates, and improvements to keep your project thriving and customers coming.'
     }
 ];
 
 export default function Process() {
     return (
         <section className="process-section" id='process'>
+            <SectionHeader super='Our Process' headline='Design. Build. Launch.'/>
             <div className="process-container">
-                <h2 className="process-title">Design. Build. Launch.</h2>
-                <p className="process-subtext">
-                    From concept to launch, we follow a thoughtful process that balances creativity with technical precision.
-                </p>
                 <div className="process-steps">
                     {steps.map((step, idx) => (
                         <div className="process-step" key={idx}>

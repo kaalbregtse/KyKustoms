@@ -26,7 +26,7 @@ export default function Nav() {
                     <li><a href="/pricing">Pricing</a></li>
                 </ul>
                 <div className='nav-cta'>
-                    <a href='/contact'>Schedule a Call</a>
+                    <a href='https://calendly.com/kyczar-kykustoms/30min'>Schedule a Call</a>
                 </div>
             </div>
         </nav>

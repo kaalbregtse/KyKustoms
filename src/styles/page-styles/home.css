@@ -1,0 +1,4 @@
+.home-gradient-background {
+    background: linear-gradient(180deg, var(--obsidian) 20%, var(--primary) 100%);
+    position: relative;
+}
