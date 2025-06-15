@@ -11,6 +11,7 @@ import PoliciesPage from './pages/documents/policies.js';
 import Sitemap from './pages/documents/sitemap.js';
 import Pricing from './pages/pricing.js';
 import PortfolioProject from './pages/portfolio-project.js';
+import FullPortfolio from './pages/full-portfolio.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
           <Route path="policies" element={<PoliciesPage />} />
           <Route path='sitemap' element={<Sitemap />} />
           <Route path='pricing' element={<Pricing />} />
+          <Route path='portfolio' element={<FullPortfolio />} />
           <Route path="portfolio/:slug" element={<PortfolioProject />} />
           {/* Add more routes here */}
         </Route>
