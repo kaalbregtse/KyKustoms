@@ -1,4 +1,5 @@
 import Babblebot from '../images/babblebot-screenshot.png';
+import WindingRoads from '../images/winding-roads/WR_hero-ss.png';
 import LIPAHero from '../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../images/portfolio-ss/personal-portfolio-ss.png';
 import CustomHero from '../components/banners/custom-hero.jsx';
@@ -15,6 +16,12 @@ export default function FullPortfolio() {
             title: 'BabbleBot - Education Platform',
             tags: ['Full Stack', 'Education', 'Website'],
             slug: 'education-platform'
+        },
+        {
+            image: WindingRoads,
+            title: 'Winding Roads Counseling - Redesign',
+            tags: ['Redesign', 'Health', 'Business'],
+            slug: 'winding-roads-counseling-redesign'
         },
         {
             image: LIPAHero,

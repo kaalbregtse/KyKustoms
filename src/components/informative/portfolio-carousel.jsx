@@ -5,7 +5,7 @@ import './portfolio-carousel.css';
 import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png'
-
+import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
 
 const projects = [
     {
@@ -22,6 +22,11 @@ const projects = [
         image: PersonalPortfolio,
         title: 'Personal Portfolio',
         slug: 'kyczar-personal-portfolio'
+    },
+    {
+        image: WindingRoadsHero,
+        title: 'Winding Roads Counseling - Redesign',
+        slug: 'winding-roads-counseling-redesign'
     }
 ];
 

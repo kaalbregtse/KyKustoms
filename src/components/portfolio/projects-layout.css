@@ -1,22 +1,17 @@
-.portfolio-header {
-    font-size: var(--font-xl);
-    text-align: center;
-    margin: 0;
-    padding: 2rem 0 4rem 0;
-    color: var(--pure-white);
-}
-
 .projects-layout-container {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 .projects-layout-container a {
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    flex: 0 1 30%;
 }
 
 .projects-layout-container a:hover {
@@ -27,7 +22,6 @@
 .individual-project {
     display: flex;
     flex-direction: column;
-    flex: 1 1 30%;
     border-radius: 8px;
     overflow: hidden;
     height: 100%;
@@ -36,8 +30,7 @@
 
 .individual-project img {
     aspect-ratio: 16/10;
-    height: 225px;
-    max-width: 400px;
+    height: 200px;
 }
 
 .project-details {
@@ -68,3 +61,19 @@
     color: var(--obsidian);
 }
 
+@media (max-width: 830px) {
+    .projects-layout-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .projects-layout-container {
+        width: 90%;
+    }
+
+    .projects-layout-container a {
+        width: 100%;
+    }
+}

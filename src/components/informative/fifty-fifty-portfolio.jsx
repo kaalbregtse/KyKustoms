@@ -3,9 +3,10 @@ import './fifty-fifty-portfolio.css';
 import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png';
+import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
 import SectionHeader from '../global/section-header';
 
-const images = [Babblebot, LIPAHero, PersonalPortfolio];
+const images = [Babblebot, LIPAHero, PersonalPortfolio, WindingRoadsHero];
 
 export default function FiftyFiftyPortfolio() {
     const [current, setCurrent] = useState(0);

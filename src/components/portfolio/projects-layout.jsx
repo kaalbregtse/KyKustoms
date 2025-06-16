@@ -7,6 +7,7 @@ export default function ProjectsLayout({projects}) {
             <SectionHeader
                 super='All Projects'
                 headline='Explore Our Latest Projects'
+                padding = '2rem 0 1rem 0'
             />
             <div className="projects-layout-container">
                 {projects.map((item, idx) => (

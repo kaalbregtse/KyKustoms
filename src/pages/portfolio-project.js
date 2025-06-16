@@ -1,12 +1,18 @@
 import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+// Babblebot Images
 import Babblebot from "../images/babblebot-screenshot.png";
 import StudentDash from '../images/student-dash-screenshot.png';
 import TeacherDash from '../images/teacher-dash-screenshot.png';
+// LIPA Images
 import LIPAHero from '../images/lipa-ss/LIPA-hero-ss.png';
 import LIPADiscover from '../images/lipa-ss/lipa-discover-ss.png';
 import LIPAFooter from '../images/lipa-ss/lipa-footer-ss.png';
+// Winding Roads Images
+import WindingRoadsHero from '../images/winding-roads/WR_hero-ss.png';
+import WindingRoadsCTA from '../images/winding-roads/WR_cta-ss.png';
+import WindingRoadsServices from '../images/winding-roads/WR_services-ss.png';
 import "../styles/page-styles/portfolio-project.css";
 
 // Example project data (should match your slugs)
@@ -41,6 +47,21 @@ const projects = [
         tech: ["Figma"],
         link: "https://www.figma.com/proto/eVDgh46zZj5afMlNvjmPQQ/LIPA-Redesign?t=5a2M00CPukVPmFQb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-7&starting-point-node-id=1%3A7"
     },
+    {
+        image: WindingRoadsHero,
+        image2: WindingRoadsCTA,
+        image3: WindingRoadsServices,
+        title: 'Winding Roads Counseling - Redesign',
+        subtitle: 'Counseling Business Site Redesign',
+        slug: 'winding-roads-counseling-redesign',
+        description: 'Winding Roads Counseling is an all encompassing counseling business. Their services range from individual therapy to couples counseling and more.',
+        background: 'This project was one of many in my series of local company site redesigns. I find companies in my area that have sites that may be in need of a revamp. I use their existing brand colors, images and identity, and incorporate them in my redesign.',
+        challenge: 'The main challenge of this project, becasue it is a counseling service, was trying to create a site that brought out feelings of comfort and care.',
+        solution: 'Using bright colors and joyful images, this redesign brings a better user-experience as well as a more comforting feel when entering the site. ',
+        results: 'The result is a more inviting and comforting redesign of Winding Roads Counseling. This project was not funded or commmissioned by the Winding Roads Entity. This was a personal project to demonstrate my design talents and hone them.',
+        tech: ['Figma'],
+        link: ''
+    }
 ];
 
 export default function PortfolioProject() {
