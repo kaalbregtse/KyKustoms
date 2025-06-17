@@ -92,7 +92,7 @@
 .portfolio-project-banner {
     width: 100%;
     min-height: 80dvh;
-    background-color: var(--lightest-blue);
+    background-color: var(--primary);
     color: var(--off-white);
     padding: 8rem 0 2rem 0;
     display: flex;
@@ -289,7 +289,7 @@
 /* --- Result Section --- */
 .portfolio-project-result {
     width: 100%;
-    background-color: var(--lightest-blue);
+    background-color: var(--primary);
     color: var(--off-white);
     padding: 5rem 0;
     display: flex;

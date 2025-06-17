@@ -84,7 +84,7 @@ export default function PortfolioProject() {
         <>
             <section className="portfolio-project-banner">
                 <div className="portfolio-project-banner-content">
-                    <Link to="/#portfolio" className="back-link">
+                    <Link to="/portfolio" className="back-link">
                         <FontAwesomeIcon icon={faArrowLeft} /> Back to Portfolio
                     </Link>
                     <h1>{project.title}</h1>

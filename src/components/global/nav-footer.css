@@ -365,7 +365,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: var(--primary);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

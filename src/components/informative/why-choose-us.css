@@ -45,10 +45,6 @@
     cursor: default;
 }
 
-.why-choose-us-cards:hover > .why-choose-us-card:not(:hover) {
-    filter: blur(1px);
-}
-
 @media (max-width: 1500px) {
     .why-choose-us-card {
         flex: 0 0 calc(29%);
