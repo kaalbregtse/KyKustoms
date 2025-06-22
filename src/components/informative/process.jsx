@@ -1,4 +1,5 @@
 import SectionHeader from '../global/section-header';
+import AnimatedLaptop from '../../images/animated-icons/laptop-ezgif.com-effects.gif';
 import './process.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -36,6 +37,9 @@ export default function Process() {
             <SectionHeader super='Our Process' headline='Design. Build. Launch.'/>
             <div className="process-container">
                 <div className="process-steps">
+                    <div className='process-step process-step-full-icon'>
+                        <img src={AnimatedLaptop} alt='animated laptop icon with html code' />
+                    </div>
                     {steps.map((step, idx) => (
                         <div className="process-step" key={idx}>
                             <span className="process-icon">

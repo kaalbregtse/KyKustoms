@@ -6,6 +6,7 @@
     justify-content: space-between;
     row-gap: 1rem;
     column-gap: 1rem;
+    padding-bottom: 5rem;
 }
 
 .projects-layout-container a {

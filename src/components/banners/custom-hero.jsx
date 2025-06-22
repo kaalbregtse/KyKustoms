@@ -1,6 +1,5 @@
 import './hero-section.css';
 import HeroBkg from '../../images/hero-banner-bkg.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function CustomHero(props) {
     return (
@@ -11,10 +10,6 @@ export default function CustomHero(props) {
                     <span className="hero-highlight"> {props.highlight}</span>
                 </h1>
                 <p>{props.subtext}</p>
-                <div className='search-bar'>
-                    <FontAwesomeIcon icon={['fas', 'magnifying-glass']} className='search-icon'/>
-                    <input type='text' placeholder='search our projects...' />
-                </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" className='hero-bottom-svg'>
                 <path

@@ -14,6 +14,10 @@ import WindingRoadsHero from '../images/winding-roads/WR_hero-ss.png';
 import WindingRoadsCTA from '../images/winding-roads/WR_cta-ss.png';
 import WindingRoadsServices from '../images/winding-roads/WR_services-ss.png';
 import "../styles/page-styles/portfolio-project.css";
+// Autumn Rose Designs
+import ARDHero from '../images/autumn-rose-designs/ARD-hero.png';
+import ARDAbout from '../images/autumn-rose-designs/ARD-about.png';
+import ARDOccasions from '../images/autumn-rose-designs/ARD-occasions.png';
 
 // Example project data (should match your slugs)
 const projects = [
@@ -61,6 +65,21 @@ const projects = [
         results: 'The result is a more inviting and comforting redesign of Winding Roads Counseling. This project was not funded or commmissioned by the Winding Roads Entity. This was a personal project to demonstrate my design talents and hone them.',
         tech: ['Figma'],
         link: ''
+    },
+    {
+        image: ARDHero,
+        image2: ARDAbout,
+        image3: ARDOccasions,
+        title: 'Autumn Rose Designs - Redesign',
+        subtitle: 'Custom Jewelry Vendor Site Design',
+        slug: 'autumn-rose-designs-proposal',
+        description: 'This was a personal practice project focused on redesigning the website for Autumn Rose Designs—a fictional representation of a small, family-owned jewelry business based in Lafayette, Indiana. The goal was to sharpen design skills, practice content structuring, and explore SEO-focused storytelling in a real-world context.',
+        background: 'Autumn Rose Designs was conceptualized as a mom-and-pop jewelry store with nearly a decade of experience creating handcrafted pieces sold at local malls and farmers markets. The existing site (imagined for this exercise) was outdated, lacked clear messaging, and didn’t reflect the warmth or personality of the brand. This made it the perfect subject for a practice redesign centered on clarity, storytelling, and user experience.',
+        challenge: 'The main challenge in this project was to treat the redesign as if it were for a real client while working within the boundaries of personal practice. This included thinking critically about how to modernize a homepage, write compelling copy, and structure the site in a way that would serve both new visitors and returning customers. Additional challenges included creating SEO-optimized content that still felt warm and authentic, and designing for both desktop and mobile experiences with no real customer feedback to guide decisions.',
+        solution: 'To solve these challenges, I created a clean, modern homepage layout that emphasized visual hierarchy and user flow. I wrote original, SEO-friendly copy for sections such as About Us, Where to Find Us, and themed product categories like Birthdays, Anniversaries, and Just Because. The language was crafted to reflect the voice of a warm, family-owned brand while incorporating keywords relevant to small business jewelry shops. I also integrated clear call-to-action ideas throughout the page and focused on organizing the content in a way that would guide visitors naturally toward discovering products, learning about the business, or getting in touch.',
+        results: 'Although this was a practice project, the result was a polished, portfolio-ready homepage concept that demonstrated my ability to combine content strategy, copywriting, and design thinking. I gained hands-on experience in shaping the tone and structure of a small business site, practiced writing with both conversion and SEO in mind, and strengthened my confidence in approaching similar real-world freelance projects. The process helped me think like both a designer and a business owner, making it a valuable exercise in creative problem-solving and user-centered design.',
+        tech: ['Figma'],
+        link: 'https://www.figma.com/proto/INvxQvCAqFQjsIWUFicezg/Autumn-Rose-Designs?node-id=1-2&t=cAeczrcfB9iR2irH-1'
     }
 ];
 

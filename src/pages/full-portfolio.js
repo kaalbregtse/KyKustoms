@@ -2,6 +2,7 @@ import Babblebot from '../images/babblebot-screenshot.png';
 import WindingRoads from '../images/winding-roads/WR_hero-ss.png';
 import LIPAHero from '../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../images/portfolio-ss/personal-portfolio-ss.png';
+import ARDHero from '../images/autumn-rose-designs/ARD-hero.png';
 import CustomHero from '../components/banners/custom-hero.jsx';
 
 import '../styles/page-styles/full-portfolio.css';
@@ -19,7 +20,7 @@ export default function FullPortfolio() {
         },
         {
             image: WindingRoads,
-            title: 'Winding Roads Counseling - Redesign',
+            title: 'Winding Roads Counseling: Redesign',
             tags: ['Redesign', 'Health', 'Business'],
             slug: 'winding-roads-counseling-redesign'
         },
@@ -34,6 +35,12 @@ export default function FullPortfolio() {
             title: 'Personal Portfolio',
             tags: ['Personal', 'Portfolio', 'Website'],
             slug: 'kyczar-personal-portfolio'
+        },
+        {
+            image: ARDHero,
+            title: 'Autumn Rose Designs: Redesign',
+            tags: ['Mom&Pop', 'Redesign', 'Jewelry'],
+            slug: 'autumn-rose-designs-proposal'
         }
     ];
 

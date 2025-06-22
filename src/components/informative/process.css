@@ -31,8 +31,9 @@
 
 .process-steps {
     display: flex;
+    flex: 0 1 32%;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -47,6 +48,19 @@
     align-items: start;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
     transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.process-step-full-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center!important;
+    text-align: center;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.process-step-full-icon img {
+    height: 170px;
 }
 
 .process-step:hover {

@@ -6,6 +6,7 @@ import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png'
 import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
+import ARDHero from '../../images/autumn-rose-designs/ARD-hero.png'
 
 const projects = [
     {
@@ -27,6 +28,11 @@ const projects = [
         image: WindingRoadsHero,
         title: 'Winding Roads Counseling - Redesign',
         slug: 'winding-roads-counseling-redesign'
+    },
+    {
+        image: ARDHero,
+        title: 'Autumn Rose Designs - Redesign',
+        slug: 'autumn-rose-designs-proposal'
     }
 ];
 

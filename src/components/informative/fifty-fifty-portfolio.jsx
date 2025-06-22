@@ -4,9 +4,10 @@ import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
 import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png';
 import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
+import ARDHero from '../../images/autumn-rose-designs/ARD-hero.png';
 import SectionHeader from '../global/section-header';
 
-const images = [Babblebot, LIPAHero, PersonalPortfolio, WindingRoadsHero];
+const images = [Babblebot, LIPAHero, PersonalPortfolio, WindingRoadsHero, ARDHero];
 
 export default function FiftyFiftyPortfolio() {
     const [current, setCurrent] = useState(0);
@@ -33,8 +34,8 @@ export default function FiftyFiftyPortfolio() {
 
     return (
         <>
-            <SectionHeader super='Portfolio' headline='View Examples of Our Work' />
-            <section className="fifty-fifty-portfolio" id='portfolio'>
+            <SectionHeader super='Portfolio' headline='View Examples of Our Work' id='portfolio' />
+            <section className="fifty-fifty-portfolio">
                 <div className='text-and-btn'>
                     <div>
                         <p>
