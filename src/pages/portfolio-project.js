@@ -18,6 +18,14 @@ import "../styles/page-styles/portfolio-project.css";
 import ARDHero from '../images/autumn-rose-designs/ARD-hero.png';
 import ARDAbout from '../images/autumn-rose-designs/ARD-about.png';
 import ARDOccasions from '../images/autumn-rose-designs/ARD-occasions.png';
+// Brew & Bloom
+import BBHero from '../images/brew-and-bloom/B&B_hero.png';
+import BBMenu from '../images/brew-and-bloom/B&B_menu.png';
+import BBVisit from '../images/brew-and-bloom/B&B_visit.png';
+// Dusk
+import DuskHero from '../images/dusk/Dusk_hero.png';
+import DuskProduct from '../images/dusk/Dusk_product.png';
+import DuskReview from '../images/dusk/Dusk-reviews.png';
 
 // Example project data (should match your slugs)
 const projects = [
@@ -80,6 +88,36 @@ const projects = [
         results: 'Although this was a practice project, the result was a polished, portfolio-ready homepage concept that demonstrated my ability to combine content strategy, copywriting, and design thinking. I gained hands-on experience in shaping the tone and structure of a small business site, practiced writing with both conversion and SEO in mind, and strengthened my confidence in approaching similar real-world freelance projects. The process helped me think like both a designer and a business owner, making it a valuable exercise in creative problem-solving and user-centered design.',
         tech: ['Figma'],
         link: 'https://www.figma.com/proto/INvxQvCAqFQjsIWUFicezg/Autumn-Rose-Designs?node-id=1-2&t=cAeczrcfB9iR2irH-1'
+    },
+    {
+        image: BBHero,
+        image2: BBMenu,
+        image3: BBVisit,
+        title: 'Brew & Bloom - Case Study',
+        subtitle: 'Coffee Shop & Florist Site Design',
+        slug: 'brew-and-bloom-case-study',
+        description: 'Brew & Bloom is a fictional coffee shop and florist business based in Lafayette, Indiana. This project involved creating a case study that showcases the design process, from initial research to final implementation, focusing on user experience and visual design.',
+        background: 'Brew & Bloom was conceptualized as a local coffee shop and florist that wanted to enhance its online presence. The goal was to create a website that not only showcased their products but also provided an engaging user experience for both coffee lovers and plant enthusiasts.',
+        challenge: 'The main challenge was to design a site that effectively combined two distinct business areas—coffee and plants—while ensuring a cohesive brand identity. Additionally, the site needed to be user-friendly, visually appealing, and optimized for both desktop and mobile devices.',
+        solution: 'The solution involved conducting user research to understand the target audience and their needs. Based on the findings, I designed a clean, modern layout that highlighted the unique offerings of Brew & Bloom. The site features sections for coffee products, unique plant-life, and an interactive map to increase foot traffic in the store. The design incorporates vibrant colors and high-quality images to create an inviting atmosphere.',
+        result: 'The project resulted in a comprehensive case study that demonstrates my design process, problem-solving skills, and ability to create a user-centered website. The Brew & Bloom site serves as a portfolio piece that showcases my capabilities in web design and development, with a focus on enhancing user experience and brand identity.',
+        tech: ['Figma', 'HTML', 'CSS'],
+        link: 'https://www.figma.com/proto/Vy5dtdTfeTy69tjJKdLflw/Brew---Bloom?node-id=0-1&t=yAAGsoS0F02lvXxB-1'
+    },
+    {
+        image: DuskHero,
+        image2: DuskProduct,
+        image3: DuskReview,
+        title: 'Dusk - Case Study',
+        subtitle: 'E-commerce Site Design',
+        slug: 'dusk-case-study',
+        description: 'Dusk is a fictional e-commerce site that specializes in selling high-quality scents and fragrences. This project involved creating a case study that showcases the design process, from initial research to final implementation, focusing on user experience and visual design.',
+        background: 'Dusk was conceptualized as a premium e-commerce brand that wanted to create an online presence that reflected its high-quality products. The goal was to design a website that not only showcased the products but also provided an engaging user experience for customers.',
+        challenge: 'The main challenge was to design a site that effectively communicated the brand’s luxury image while ensuring a seamless shopping experience. Additionally, the site needed to be user-friendly, visually appealing, and optimized for both desktop and mobile devices.',
+        solution: 'The solution involved conducting user research to understand the target audience and their needs. Based on the findings, I designed a clean, modern layout that highlighted the unique offerings of Dusk. The site features sections for product categories, customer reviews, and an easy-to-navigate shopping experience. The design incorporates elegant colors and high-quality images to create a sophisticated atmosphere.',
+        result: 'The project resulted in a comprehensive case study that demonstrates my design process, problem-solving skills, and ability to create a user-centered e-commerce website. The Dusk site serves as a portfolio piece that showcases my capabilities in web design and development, with a focus on enhancing user experience and brand identity.',
+        tech: ['Figma', 'HTML', 'CSS'],
+        link: 'https://www.figma.com/proto/6qZq3Cz6joJP6hyAaH2TVP/Dusk?node-id=0-1&t=P7pBIyjFm9qq86tQ-1'
     }
 ];
 
@@ -92,7 +130,7 @@ export default function PortfolioProject() {
         return (
             <div className="portfolio-project-section">
                 <h2>Project Not Found</h2>
-                <Link to="/#portfolio" className="back-link">
+                <Link to="/portfolio" className="back-link">
                     <FontAwesomeIcon icon={faArrowLeft} /> Back to Portfolio
                 </Link>
             </div>

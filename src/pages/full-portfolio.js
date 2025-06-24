@@ -1,8 +1,9 @@
 import Babblebot from '../images/babblebot-screenshot.png';
 import WindingRoads from '../images/winding-roads/WR_hero-ss.png';
 import LIPAHero from '../images/lipa-ss/LIPA-hero-ss.png';
-import PersonalPortfolio from '../images/portfolio-ss/personal-portfolio-ss.png';
 import ARDHero from '../images/autumn-rose-designs/ARD-hero.png';
+import BBHero from '../images/brew-and-bloom/B&B_hero.png';
+import DuskHero from '../images/dusk/Dusk_hero.png';
 import CustomHero from '../components/banners/custom-hero.jsx';
 
 import '../styles/page-styles/full-portfolio.css';
@@ -31,16 +32,22 @@ export default function FullPortfolio() {
             slug: 'lafayette-indiana-pickleball-association-redesign'
         },
         {
-            image: PersonalPortfolio,
-            title: 'Personal Portfolio',
-            tags: ['Personal', 'Portfolio', 'Website'],
-            slug: 'kyczar-personal-portfolio'
-        },
-        {
             image: ARDHero,
             title: 'Autumn Rose Designs: Redesign',
-            tags: ['Mom&Pop', 'Redesign', 'Jewelry'],
+            tags: ['Business', 'Redesign', 'Jewelry'],
             slug: 'autumn-rose-designs-proposal'
+        },
+        {
+            image: BBHero,
+            title: 'Brew & Bloom: Case Study',
+            tags: ['Case Study', 'Business', 'Website'],
+            slug: 'brew-and-bloom-case-study'
+        },
+        {
+            image: DuskHero,
+            title: 'Dusk: Case Study',
+            tags: ['Case Study', 'Business', 'Website'],
+            slug: 'dusk-case-study'
         }
     ];
 

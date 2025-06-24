@@ -1,13 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
+import SectionHeader from '../global/section-header';
 import './fifty-fifty-portfolio.css';
+
+// Design Images
 import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
-import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png';
 import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
 import ARDHero from '../../images/autumn-rose-designs/ARD-hero.png';
-import SectionHeader from '../global/section-header';
+import BBHero from '../../images/brew-and-bloom/B&B_hero.png';
+import DuskHero from '../../images/dusk/Dusk_hero.png';
 
-const images = [Babblebot, LIPAHero, PersonalPortfolio, WindingRoadsHero, ARDHero];
+
+const images = [Babblebot, LIPAHero, WindingRoadsHero, ARDHero, BBHero, DuskHero];
 
 export default function FiftyFiftyPortfolio() {
     const [current, setCurrent] = useState(0);

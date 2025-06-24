@@ -4,9 +4,10 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import './portfolio-carousel.css';
 import Babblebot from '../../images/babblebot-screenshot.png';
 import LIPAHero from '../../images/lipa-ss/LIPA-hero-ss.png';
-import PersonalPortfolio from '../../images/portfolio-ss/personal-portfolio-ss.png'
 import WindingRoadsHero from '../../images/winding-roads/WR_hero-ss.png';
 import ARDHero from '../../images/autumn-rose-designs/ARD-hero.png'
+import BBHero from '../../images/brew-and-bloom/B&B_hero.png';
+import DuskHero from '../../images/dusk/Dusk_hero.png';
 
 const projects = [
     {
@@ -20,11 +21,6 @@ const projects = [
         slug: 'lafayette-indiana-pickleball-association-redesign'
     },
     {
-        image: PersonalPortfolio,
-        title: 'Personal Portfolio',
-        slug: 'kyczar-personal-portfolio'
-    },
-    {
         image: WindingRoadsHero,
         title: 'Winding Roads Counseling - Redesign',
         slug: 'winding-roads-counseling-redesign'
@@ -33,6 +29,16 @@ const projects = [
         image: ARDHero,
         title: 'Autumn Rose Designs - Redesign',
         slug: 'autumn-rose-designs-proposal'
+    },
+    {
+        image: BBHero,
+        title: 'Brew & Bloom - Case Study',
+        slug: 'brew-and-bloom-case-study'
+    },
+    {
+        image: DuskHero,
+        title: 'Dusk - Case Study',
+        slug: 'dusk-case-study'
     }
 ];
 
