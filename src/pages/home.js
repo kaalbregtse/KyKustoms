@@ -5,6 +5,7 @@ import Process from '../components/informative/process';
 import PortfolioCarousel from '../components/informative/portfolio-carousel';
 import WhyChooseUs from '../components/informative/why-choose-us';
 import FiftyFiftyPortfolio from '../components/informative/fifty-fifty-portfolio';
+import QuoteForm from '../components/quote-form/quote-form';
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
                 <FiftyFiftyPortfolio />
             </div>
             <Process />
+            <QuoteForm />
         </div>
     );
 }

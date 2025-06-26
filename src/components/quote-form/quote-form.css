@@ -1,0 +1,35 @@
+.quote-form-section{
+    width: 100%;    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: var(--obsidian);
+    position: relative;
+    padding: 100px 0 0 0;
+}
+
+.quote-form-container {
+    width: 60%;
+    max-width: 60%;
+    padding: 1rem;
+    background: linear-gradient(-150deg, var(--obsidian), var(--black));
+    border: 1px solid var(--highlight);
+    color: var(--pure-white);
+    position: absolute;
+    bottom: -20px;
+    border-radius: 12px;
+}
+
+.quote-form-title {
+    text-align: center;
+    font-size: var(--font-2xl);
+    margin: 0 0 1rem 0;
+}
+
+.form-step {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
