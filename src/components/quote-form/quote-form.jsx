@@ -58,34 +58,50 @@ export default function QuoteForm() {
     return (
         <section className="quote-form-section">
             <div className="quote-form-container">
-                <h2 className="quote-form-title">Get a Quote</h2>
-                <form className="quote-form" onSubmit={handleSubmit}>
-                    {currentStep === 1 && (
-                        <StepOne
-                            form={form}
-                            handleChange={handleChange}
-                            handleNext={handleNext}
-                        />
-                    )}
-                    {currentStep === 2 && (
-                        <StepTwo
-                            form={form}
-                            handleChange={handleChange}
-                            handleNext={handleNext}
-                            handlePrev={handlePrev}
-                        />
-                    )}
-                    {currentStep === 3 && (
-                        <StepThree
-                            form={form}
-                            handlePrev={handlePrev}
-                        />
-                    )}
-                    {status.loading && <p>Loading...</p>}
-                    {status.success && <p className="success-message">{status.success}</p>}
-                    {status.error && <p className="error-message">{status.error}</p>}
-                </form>
-            </div>
+                    <h2 className="quote-form-title">Get a Quote</h2>
+                    <div className="progress-indicator">
+                        <div className="progress-bar">
+                            <div
+                                className="progress"
+                                style={{ width: `${(currentStep - 1) * 50}%`}}
+                            ></div>
+                        </div>
+                        <div className="steps">
+                            <div className={`step ${currentStep === 1 ? "active" : "" 
+                                }`}>1</div>
+                            <div className={`step ${currentStep === 2 ? "active" : ""  
+                                }`}>2</div>
+                            <div className={`step ${currentStep === 3 ? "active" : ""  
+                                }`}>3</div>
+                        </div>
+                    </div>
+                    <form className="quote-form" onSubmit={handleSubmit}>
+                        {currentStep === 1 && (
+                            <StepOne
+                                form={form}
+                                handleChange={handleChange}
+                                handleNext={handleNext}
+                            />
+                        )}
+                        {currentStep === 2 && (
+                            <StepTwo
+                                form={form}
+                                handleChange={handleChange}
+                                handleNext={handleNext}
+                                handlePrev={handlePrev}
+                            />
+                        )}
+                        {currentStep === 3 && (
+                            <StepThree
+                                form={form}
+                                handlePrev={handlePrev}
+                            />
+                        )}
+                        {status.loading && <p>Loading...</p>}
+                        {status.success && <p className="success-message">{status.success}</p>}
+                        {status.error && <p className="error-message">{status.error}</p>}
+                    </form>
+                </div>
         </section>
     );
 }

@@ -335,7 +335,7 @@ nav > div > div:last-child a:hover {
 footer {
     background-color: var(--primary);
     color: var(--pure-white);
-    padding: 2rem 10%;
+    padding: 5rem 10%;
     font-size: var(--font-sm);
     display: flex;
     align-items: flex-start;    
