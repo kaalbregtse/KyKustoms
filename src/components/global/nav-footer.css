@@ -201,7 +201,7 @@ nav > div > div:last-child a:hover {
         position: absolute;
         left: 0;
         top: 100%;
-        height: 86dvh;
+        height: 83dvh;
     }
     .nav-mobile-menu.open {
         display: flex;
@@ -335,7 +335,7 @@ nav > div > div:last-child a:hover {
 footer {
     background-color: var(--primary);
     color: var(--pure-white);
-    padding: 2rem 10%;
+    padding: 17rem 10% 2rem 10%;
     font-size: var(--font-sm);
     display: flex;
     align-items: flex-start;    
