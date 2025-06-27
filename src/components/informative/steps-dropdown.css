@@ -1,0 +1,110 @@
+.steps-dropdown.modern-dropdown {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-step.modern-step {
+    background: transparent;
+    transition: background 0.2s;
+}
+
+.dropdown-step.open .dropdown-toggle.modern-toggle {
+    background: var(--primary);
+}
+
+.dropdown-toggle.modern-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.25rem 2rem 1.25rem 1.5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-lg);
+    cursor: pointer;
+    gap: 1.2rem;
+    color: var(--pure-white);
+    border-radius: 12px 12px 0 0;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.2s;
+    margin-top: 3px;
+}
+
+.dropdown-toggle.modern-toggle:focus,
+.dropdown-toggle.modern-toggle:hover {
+    background: var(--primary);
+}
+
+.dropdown-icon.modern-icon {
+    font-size: 1.5rem;
+    min-width: 2.2rem;
+    color: var(--highlight);
+    background: rgba(0,126,167,0.18);
+    border-radius: 8px;
+    padding: 0.35rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-title.modern-title {
+    flex: 1;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--pure-white);
+    font-size: 1.1rem;
+}
+
+.dropdown-plusminus.modern-plusminus {
+    font-size: 1.3rem;
+    color: var(--highlight);
+    margin-left: 0.5rem;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.dropdown-step.open .dropdown-plusminus.modern-plusminus {
+    color: var(--lightest-blue);
+}
+
+.dropdown-panel.modern-panel {
+    background: var(--primary);
+    padding: 1.2rem 2.5rem 1.5rem 4.2rem;
+    color: var(--off-white);
+    font-size: var(--font-base);
+    border-radius: 0 0 12px 12px;
+    animation: fadeIn 0.2s;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    margin-top: -0.5rem;
+    margin-bottom: 3px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 700px) {
+    .steps-dropdown.modern-dropdown {
+        padding: 0.25rem 0;
+        border-radius: 12px;
+    }
+    .dropdown-toggle.modern-toggle {
+        font-size: var(--font-base);
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .dropdown-panel.modern-panel {
+        padding: 1rem 1.2rem 1.2rem 2.5rem;
+        font-size: var(--font-sm);
+    }
+}
+
+@media (max-width: 500px) {
+
+}

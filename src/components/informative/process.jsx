@@ -1,55 +1,22 @@
 import SectionHeader from '../global/section-header';
-import AnimatedLaptop from '../../images/animated-icons/laptop-ezgif.com-effects.gif';
 import './process.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const steps = [
-    {
-        icon: ['fas', 'magnifying-glass'],
-        title: 'Discovery',
-        desc: 'We learn about your goals, audience, and requirements to set a strong foundation for your project.'
-    },
-    {
-        icon: ['fas', 'palette'],
-        title: 'Design',
-        desc: 'We craft intuitive, engaging interfaces and user experiences tailored to your brand and users.'
-    },
-    {
-        icon: ['fas', 'laptop-code'],
-        title: 'Development',
-        desc: 'We build robust, scalable solutions using modern technologies like React and industry best practices.'
-    },
-    {
-        icon: ['fas', 'rocket'],
-        title: 'Launch',
-        desc: 'We deploy your project, ensure everything runs smoothly, and celebrate your new digital presence.'
-    },
-    {
-        icon: ['fas', 'tools'],
-        title: 'Support',
-        desc: 'We provide ongoing support, updates, and improvements to keep your project thriving and customers coming.'
-    }
-];
+import StepsDropdown from './steps-dropdown';
 
 export default function Process() {
     return (
         <section className="process-section" id='process'>
             <SectionHeader super='Our Process' headline='Design. Build. Launch.'/>
-            <div className="process-container">
-                <div className="process-steps">
-                    <div className='process-step process-step-full-icon'>
-                        <img src={AnimatedLaptop} alt='animated laptop icon with html code' />
-                    </div>
-                    {steps.map((step, idx) => (
-                        <div className="process-step" key={idx}>
-                            <span className="process-icon">
-                                <FontAwesomeIcon icon={step.icon} />
-                            </span>
-                            <h3 className="process-step-title">{step.title}</h3>
-                            <p className="process-step-desc">{step.desc}</p>
-                        </div>
-                    ))}
+            <div className='process-container'>
+                <div className='process-info'>
+                    <p>
+                        Our process is designed to ensure your project is a success from start to finish. We follow a structured approach that does not move forward until each step is completed to your satisfaction. 
+                    </p>
+                    <p style={{marginBottom: '2rem'}}>
+                        This ensures that we fully understand your needs and deliver a product that exceeds your expectations.
+                    </p>
+                    <a href='/#quote' className='get-quote-button'>Get Started with a Quote</a>
                 </div>
+                <StepsDropdown />
             </div>
         </section>
     );
