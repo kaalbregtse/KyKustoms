@@ -76,7 +76,7 @@ export default function QuoteForm() {
     };
 
     return (
-        <section className="quote-form-section">
+        <section className="quote-form-section" id="quote">
             <div className="quote-form-container">
                     <h2 className="quote-form-title">Get a Quote</h2>
                     <div className="progress-indicator">

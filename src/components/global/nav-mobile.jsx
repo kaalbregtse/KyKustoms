@@ -35,7 +35,7 @@ export default function NavMobile() {
                     <li><a href="/#services" onClick={() => setOpen(false)}>Services</a></li>
                     <li><a href="/#portfolio" onClick={() => setOpen(false)}>Past Work</a></li>
                     <li><a href="/#process" onClick={() => setOpen(false)}>Our Process</a></li>
-                    <li><a href="/pricing" onClick={() => setOpen(false)}>Pricing</a></li>
+                    <li><a href="/#quote" onClick={() => setOpen(false)}>Get a Quote</a></li>
                 </ul>
                 <a href="https://calendly.com/kyczar-kykustoms/30min" className="nav-mobile-cta" onClick={() => setOpen(false)}>Schedule a Call</a>
             </div>

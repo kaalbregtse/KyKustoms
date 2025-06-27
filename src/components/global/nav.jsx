@@ -23,7 +23,7 @@ export default function Nav() {
                     <li><a href="/#services">Services</a></li>
                     <li><a href="/#portfolio">Past Work</a></li>
                     <li><a href="/#process">Our Process</a></li>
-                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/#quote">Get a Quote</a></li>
                 </ul>
                 <div className='nav-cta'>
                     <a href='https://calendly.com/kyczar-kykustoms/30min'>Schedule a Call</a>
