@@ -4,7 +4,7 @@ export default function StepTwo({ form, handleChange, handleNext, handlePrev }) 
         "New Website",
         'UX/UI Design',
         "SEO Optimization",
-        "Support Maintenance",
+        "Support/Maintenance",
         "Other"
     ];
 

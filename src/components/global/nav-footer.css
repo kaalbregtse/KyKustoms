@@ -201,7 +201,7 @@ nav > div > div:last-child a:hover {
         position: absolute;
         left: 0;
         top: 100%;
-        height: 86dvh;
+        height: 83dvh;
     }
     .nav-mobile-menu.open {
         display: flex;

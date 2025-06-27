@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import StepOne from './step1';
 import StepTwo from './step2';
 import StepThree from './step3';
+import Loader from './loader';
 import "./quote-form.css"; // Ensure you have the appropriate CSS for styling
-import { TailChase } from 'ldrs/react'
-import 'ldrs/react/TailChase.css'
 
 export default function QuoteForm() {
     const [currentStep, setCurrentStep] = useState(1);
@@ -44,6 +43,7 @@ export default function QuoteForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        handleNext(); // Move to the next step before submitting
         setStatus({ loading: true, success: null, error: null });
 
         try {
@@ -64,12 +64,14 @@ export default function QuoteForm() {
                     timeline: "",
                     additionalInfo: ""
                 });
-                setCurrentStep(1);
+                setTimeout(() => (
+                    setCurrentStep(1)
+                ), 5000)
             } else {
                 throw new Error("Failed to send message.");
             }
         } catch (err) {
-            setStatus({ loading: false, success: null, error: "Something went wrong. Please try again later." });
+            setStatus({ loading: false, success: null, error: "Something went wrong. Please try again later or send me an email or text directly." });
         }
     };
 
@@ -117,14 +119,9 @@ export default function QuoteForm() {
                                 handlePrev={handlePrev}
                             />
                         )}
-                        {status.loading &&
-                            <TailChase
-                                size="40"
-                                speed="1.75"
-                                color="blue" 
-                            />}
-                        {status.success && <p className="success-message">{status.success}</p>}
-                        {status.error && <p className="error-message">{status.error}</p>}
+                        {currentStep === 4 &&
+                            <Loader status={status}/>
+                        }
                     </form>
                 </div>
         </section>

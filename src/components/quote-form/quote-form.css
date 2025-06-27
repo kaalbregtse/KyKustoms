@@ -6,6 +6,7 @@
     background: var(--obsidian);
     position: relative;
     min-height: 60dvh;
+    padding: 125px 0 0 0;
 }
 
 .quote-form-container {
@@ -252,4 +253,84 @@
     box-shadow: none;
     border: 1px solid var(--pure-white);
     resize:vertical;
+}
+
+.loader-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container p {
+    color: var(--pure-white);
+    font-size: var(--font-base);
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .quote-form-container {
+        max-width: 80%;
+        width: 80%;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .quote-form-container {
+        width: 90%;
+        max-width: 98vw;
+        min-width: 0;
+        padding: 0.5rem;
+        bottom: unset;
+    }
+    .form-step {
+        width: 95%;
+        min-width: 0;
+    }
+    .progress-indicator {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .quote-form-container {
+        width: 90%;
+        max-width: 90%;
+        min-width: 0;
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+    .form-step {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .progress-indicator {
+        width: 100%;
+    }
+    .input-container {
+        min-height: 0;
+    }
+    .quote-text-input input,
+    .quote-textarea textarea {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .next-step-button,
+    .prev-step-button {
+        width: 100%;
+        padding: 0.75rem 0;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    .steps {
+        top: -200%;
+    }
 }
