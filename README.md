@@ -12,8 +12,7 @@ I create websites that are **fast, modern, and tailored** to help businesses sta
 
 > Here’s a look at the KyKustoms homepage:  
 
-![KyKustoms Screenshot](assets/screenshot.png)  
-*(Save the provided screenshot in `/assets/screenshot.png` inside your repo to display it here)*  
+<img width="1894" height="1018" alt="image" src="https://github.com/user-attachments/assets/9be59c10-2811-4d96-af8a-460a26f87d8c" />
 
 ---
 
